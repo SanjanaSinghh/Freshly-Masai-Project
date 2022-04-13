@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #navBar{
+            display: flex;
+            justify-content: space-evenly;
+            padding-left: 10px;
+            background-color: white;
+            padding: 10px;
+        }
+        /* #navBar:hover{
+            color: #3167ff;
+    
+        } */
+        #menu:hover{
+            color: #3167ff;
+            text-size-adjust: 20px;
+        }
+        #navBar>img{
+            height: 70px;
+            width: 80px;
+        }
+        #work:hover{
+            color: #3167ff;
+            font-size: 20px;
+        }
+        #gits:hover{
+            color: #3167ff;
+        }
+        #friends:hover{
+            color: #3167ff;
+            font-size: 20px;
+        }
+        #help:hover{
+            color: #3167ff;
+            font-size: 20px;
+        }
+        #login:hover{
+            color: #3167ff;
+            font-size: 20px;
+        }
+        #container{
+            /* display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(1,49%); */
+            display: flex;
+            height: 600px;
+            width:90%;
+            /* border: 1px solid red; */
+            margin: auto;
+        }
+        /* .box,#navBar>container{
+            border: 1px solid red;
+
+        } */
+   
+        .box{
+            height: 595px;
+            width:48%;
+            /* border: 1px solid green; */
+            margin: auto;
+      
+        }
+        #img2{
+            background-image: url("https://assets-global.website-files.com/5d03b4e130118314af624b20/61fd3f829ccc38509211dd89_Q1_Refresh_Homepage_Banner_NoText%20(1).jpg");
+           background-size: cover;
+             width: 100%;
+             height: 100%;  
+             display: flex;
+             justify-content: flex-end;
+             align-items: flex-end;
+        }
+       .n2{
+            font-size: 60px;
+        }
+        #sub{
+             background-color:#3167ff;
+        }
+        #t{
+            color: #3167ff;
+        }
+        #p{
+            color: #3167ff;
+        }
+        #a{
+            background-color: #3167ff;
+        }
+        #n2{
+            padding: auto;
+        }
+        #email{
+            padding: auto;
+        }
+        #btn{
+        background-color: #3167ff;
+        color: white;
+        padding: 10px;
+        }
+        #btn:hover{
+            border: none;
+            border-left: #010614;
+        }
+    </style>
+</head>
+<body>
+    <div id="navBar">
+        <img class="img1"src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg" alt="">
+        <div id="menu">Plans & Menu</div>
+        <div id="work">How it Work</div>
+        <div id="gits">Gits</div>
+        <div id="friends">Refer a friend</div>
+        <div id="help">Help</div>
+        <button id="login">Login</button>
+        <button id="a">SignUp</button>
+    </div>
+    <div id="container">
+        <div class="box">
+            <h1 class="n2">Chef cooked, healthy meals delivered to you.</h1>
+            <h1>See meals available in your area!</h1>
+            <p>Email Address</p>
+            <input type="email" placeholder="freshly@freshly.com" id="email">
+            <p>ZIP Code</p>
+            <input type="number" placeholder="11111" id="n2">
+            <input id="sub" type="Submit" value="Explore More">
+            <p>By continuing, you agree to our <u id="t">Terms</u> and <u id="p">Privacy Policy</u> & will receive emails from Freshly.</p>
+        </div>
+        <div class="box">
+            <div id="img2">
+                <!-- <h1 class="hero-image-meal-title">Hit Reset</h1>
+                <p>Go back to eating better</p>
+                <input type="submit" value="Discover More"> -->
+                <div>
+                    <h1 class="hero-image-meal-title">Hit Reset</h1>
+                    <p>Go back to eating better</p>
+                    <!-- <input type="submit2" value="Discover More"> -->
+                    <button id="btn">Discover More</button>
+                </div>
+            </div>
+      
+            
+        </div>
+    </div>
+    
+</body>
+</html>
