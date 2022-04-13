@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        body{
+            background-color: rgb(250, 242, 243);
+        }
+        .navbar{
+            height: 80px;
+            width: 135%;
+            display: flex;
+            background-color: white;
+        }
+         #nav{
+            margin: 0;
+            justify-content: space-between;
+            display: flex;
+         } 
+         #nav p{
+            padding: 2px 16px;
+         } 
+       #right{
+        padding-left: 400px;
+            font-size: 25px;
+            display: flex;
+            cursor: pointer;
+       }
+       #right p{
+          padding: 2px 16px;
+        }
+        #body{
+        height: 324px;
+        width: 25%;
+        margin-left: 35%;
+        margin-top: 5%;
+        padding-left: 3%;
+        padding-top: 1%;
+        
+        border-color: rgb(92, 142, 142) 10px solid;
+        border: none;
+        }
+        #body h1{
+            font-size: 45px;
+            margin: 0;
+            text-align: center;
+           
+        }
+        input{
+            height: 32px;
+            width: 550px;
+        }
+        #foot{
+            border-top: 1px solid gray; 
+            background-color: white;
+            height: 238px;
+        }
+    </style>
+</head>
+<body>
+        <div class="navbar">
+            <div id="nav" >
+                <p>Plans & Menu</p>
+                <p>About</p>
+                <p>For Business</p>
+                <p>Gifts</p>
+            </div>
+
+            <div style="width: 10%;">
+                <img style="height: 73px; width: 123px; padding-left: 250px; margin-top: 0;"
+                    src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
+                    alt="">
+            </div>
+
+            <div id="right">
+     <p>Get $30</p>
+     <p>Help</p>
+     <p><a style="text-decoration: none; color: black;" href="login.html">Login </a></p>
+     <p><a style="background-color: blue; color: white;text-decoration: none; border:5px solid blue" href="signUp.html">Sign Up</a></p>
+            </div>
+        </div>
+
+        <div id="body">
+       <h1>Log In</h1>
+       <form>
+           Email<br>
+           <input type="text" id="email" placeholder="you@domain.com"><br><br>
+           Password<br>
+           <input type="password" id="password" placeholder="enter password"><br>
+           <br>
+           <input style="background-color: rgb(69, 69, 230);color: white;" type="submit" value="Log in">
+           <p style=" margin-left: auto;width: 550px;"><a style="padding-right: 200px;margin: 0; color:rgb(69, 69, 230);" href="forget.html">Forgot Password?</a> 
+            Don’t have an account?<a href="signUp.html">Get Started</a></p>
+        </form>
+       </div>
+
+       <div id="foot">
+        <div style="width: 10%;">
+            <img style="height: 73px; width: 123px; padding-left: 250px; margin-top: 0;"
+                src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
+                alt=""><p style="height: 20px; width: 123px; padding-left: 250px; margin-top: 0;">Freshly Inc.</p>
+        </div>
+       <div>
+        <p>Company</p>
+       <a>Careers</a>
+       <a>Contact Us</a>
+       <a>Press</a>
+       <a>Terms</a>
+       <a>Privacy</a>
+       </div>
+       <div></div>
+       <div></div>
+       </div>
+        </div>
+    
+</body>
+<script>
+      document.querySelector('form').addEventListener('submit',logfn);
+    function logfn(){
+    var regisUs = JSON.parse(localStorage.getItem('usdata'));
+    if(regisUs==null){
+        alert('not found')
+        window.location.reload()
+        return
+    }
+    event.preventDefault();
+    var givemail = document.querySelector('#email').value;
+    var givpass = document.querySelector('#password').value;
+
+   regisUs.forEach(usdata => {
+       if(usdata.email===givemail && usdata.password===givpass){
+           alert('Login Successful');
+           localStorage.setItem('curser',name)
+           sanjana=true
+           window.location.href = 'index.html';
+       }
+      
+   });
+   if(sanjana==false){
+       alert("invalid credentials")
+   }
+
+    }
+</script>
+</html>
