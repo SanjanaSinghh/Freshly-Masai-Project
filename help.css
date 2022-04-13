@@ -1,0 +1,42 @@
+#coverPic {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 300px;
+    width: auto;
+    background-image: url('https://post.healthline.com/wp-content/uploads/2020/07/467649-Freshly-Review-A-Dietitians-Expert-Take-1200x628-Facebook-1200x628.jpg');
+}
+div > input {
+    height: 30px;
+    width: 550px;
+    border-radius: 50px;
+    border: none;
+}
+#enquire{
+    
+    display: block;
+    padding: 3%;
+    justify-content: center;
+}
+#enquire  button{
+    background-color: white;
+    border: 1px solid teal;
+    border-radius: 2px;
+    height: 70px;
+    width: 350px;
+    margin: 2%;
+    
+}
+#enquire > button:hover{
+    background-color: teal;
+}
+#navBar{
+    
+    display: flex;
+}
+#navBar img{
+    height: 50px;
+    
+}
+
+
