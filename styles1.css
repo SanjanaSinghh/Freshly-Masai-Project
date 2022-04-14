@@ -1,0 +1,120 @@
+#outerDiv{
+    height: 30px;
+    display:grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+#outerDiv>div{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 10px;
+    padding: 2%;
+    
+}
+#innerDiv1>a>img{
+    height: 10px;
+    width: 50px;
+    padding: 5%;
+}
+#innerDiv3>div{
+    padding: 5%;
+}
+#signUp{
+    background-color: #3167ff;
+    color: white;
+    
+}
+  h1{
+      text-align: center;
+      font-size: 42px;
+  }
+  h2{
+      text-align: center;
+      font-size: 16px;
+  }
+  .box{
+      background-color: antiquewhite;
+      height:700px;
+      width:100%;
+      padding-top: 20px;
+      line-height: 10px;
+      margin-bottom: 50px;
+      
+  }
+  .box1{
+      display: inline-flex;
+      height:300px;
+      width:75%;
+      margin:100px 50px 30px 200px;
+      /* border:2px solid black; */
+      /* box-align: center; */
+  }
+  .box2{
+      display: inline ;
+      height: 300px;
+      width:25%;
+      margin-left: 5%;
+      /* border:2px solid black; */
+      
+
+  }
+  .box3{
+      height: 800px;
+      width:65%;
+      margin-left: 250px;
+      /* border: 1px solid black; */
+  }
+  .box4{
+      display:inline-flex;
+      height: 30%;
+      width:100%;
+      margin-top: 4%;
+      /* border: 1px solid black; */
+  }
+  .box5{
+      height:100%;
+      width:45%;
+      /* margin-left: 45%; */
+      /* border:1px solid black; */
+      /* padding-top:20px; */
+  }
+  .box6{
+      height:100%;
+      width:55%;
+      margin-left: 5%;
+      /* border:1px solid black; */
+      padding-top:28px;
+   }
+   .box7{
+       height:180px;
+       width:100%;
+       background-image: url(https://assets-global.website-files.com/5d03b4e130118314af624b20/61f1296df66804c2d4aaf1e4_22_About_SeePlansMenu_1440x300_desktop.jpg);
+       margin-top: 120px;
+       padding-top:155px;
+       margin-bottom: 80px;
+   
+    }
+  img{
+      height: 200px;
+      width:100%;
+      /* padding-bottom: 40px; */
+
+  }
+  #img1{
+      height:100%;
+      width:100%;
+  }
+  button{
+      background-color: blue;
+      color:white;
+      font-size: 25px;
+      margin-left: 650px;
+      height: 60px;
+      width:150px
+  }
+  .video{
+      margin-left: 200px;
+  }
+  p1{
+      height: 32px;
+      text-align: justify;
+  }
