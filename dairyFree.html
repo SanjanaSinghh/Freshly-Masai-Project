@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dairy-Free</title>
+    <style>
+/* universal */
+        *{
+            font-family: sans-serif;
+            color: #333333;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+ /*navBar  */
+       #outerDiv{
+          height: 30px;
+          display:grid;
+          grid-template-columns: 1fr 4fr 1fr;
+      }
+      #outerDiv>div{
+          display: flex;
+          justify-content: space-evenly;
+          font-size: 10px;
+          padding: 2%;
+          
+      }
+      #innerDiv1>a>img{
+          height: 10px;
+          width: 50px;
+          padding: 5%;
+      }
+      #innerDiv3>div{
+          padding: 5%;
+      }
+      #innerDiv2>div{
+          font-size: 7px;
+          font-family: sans-serif;
+          color: #333333;
+          font-weight: bold;
+      }
+      #signUp{
+          background-color: #3167ff;
+          color: white;
+          
+      }
+
+ /* top */
+      #image{
+          box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+      }
+      #image>img{
+          height: 200px;
+          width: 100%;
+      }
+      #top1{
+          width: 55%;
+          text-align: center;
+          margin: auto;
+      }
+      #top1>h1{
+          font-size: 28px;
+          color: #333333;
+      }
+      #top1>p{
+          font-size: 8.5px;
+          color: #333333;
+      }
+      #top1>button{
+          background-color: #3167ff;
+          border: none;
+          padding: 2%;
+          margin-top: 15px;
+          font-size: 8px;
+          color: white;
+      }
+
+
+
+/* body */
+      .body1{
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+          margin-top: 50px;
+          height: auto;
+      }
+      .body1pic>img{
+          width: 100%;
+          height: 100%;
+      }
+      .body2{
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+          height: auto;
+      }
+      .body2pic>img{
+          width: 100%;
+          height: 100%;
+      }
+      .body3{
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+          height: auto;
+      }
+      .bodypic>img{
+        width: 100%;
+          height:100%;
+      }
+      .bodytext{
+          display: flex;
+          flex-direction: column;
+          justify-items: center;
+          justify-content: center;
+          margin-left: 5px;
+      }
+      .bodytext>button{
+          width: 40%;
+          background-color: #3167ff;
+          font-size: 9px;
+          padding: 2%;
+          border: none;
+          color: white;
+          margin-top: 20px;
+      }
+      .bodytext>h4{
+          font-size: 10px;
+      }
+      .bodytext>h2{
+          font-size: 18px;
+      }
+      .bodytext>p,li{
+          font-size: 7px;
+      }
+
+ /* bottom */
+      #bottom1{
+          width: 40%;
+          margin: auto;
+      }
+      #bottom1>h3{
+          text-align: center;
+      }
+      #bottom1>p{
+          font-size: 7px;
+          text-align: center;
+      }
+      #bottom2{
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          height: auto;
+
+      }
+      #bottom2>div{
+          margin: auto;
+          text-align: center;
+      }
+      #bottom2>div>img{
+          height: 50px;
+          width: 50px;
+      }
+      #bottom2>div>p{
+          font-size: 9px;
+      }
+      #bottomButton{
+          margin: auto;
+          width: 115px;
+         
+      }
+      #bottomButton>button{
+        background-color: #3167ff;
+          border: none;
+          color: white;
+          font-size: 10px;
+          padding: 5%;
+      }
+    </style>
+</head>
+<body>
+<!-- navBar -->
+    <div id="outerDiv">
+        <div id="innerDiv1">
+               <a href="./planAndMenu.html"><img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg" alt=""></a>
+        </div>
+        <div id="innerDiv2">
+            <div>Plans & Menus</div>
+            <div>How it Works</div>
+            <div>Gift</div>
+            <div>Refer a Friend</div>
+            <div>Help</div>
+        </div>
+        <div id="innerDiv3">
+            <div>login</div>
+            <div id="signUp">signUp</div>
+        </div>
+      </div>  
+<!-- body -->
+      <div id="image">
+         <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/6213e940eee23782f4ae7e74_61cc9006dfc204c73c6ab0a0_20_Winter1_FitHybridMeals_OH_75.jpeg" alt="">
+      </div>
+      <div id="top1">
+          <h1>Deliciously Easy Dairy-Free Meals.</h1>
+          <p>Enjoying great food on a dairy-free diet doesn’t need to be difficult! We know that not everyone eats the same way, which is why we created a variety of effortless, dairy-free meals that let you savor all the delicious, satisfying flavors you want—without having to settle.</p>
+          <button><a href="./planAndMenu.html">View Plans & Menu</a></button>
+      </div>
+      <div class="body1">
+          <div class="bodytext">
+            <h4>More Meals, More Choice</h4> 
+            <h2>It's Dairy Free for All Tastes</h2> 
+            <p>We believe dairy free shouldn’t prevent you from enjoying the foods you crave. That’s why we’ve developed dairy-free recipes that span the globe and cater to a wide variety of tastes—so that your dietary preferences never feel like limitations. Explore a host of culinary options: from signature meals like our Baja Pork Bowl and our Sesame-Ginger Chicken & Noodles to seafood fan favorites like our Shrimp & Andouille Paella as well as calorie and carb-conscious meals from our FreshlyFit lineup. Or discover the plant-based goodness from our new Purely Plant meals—all of which are dairy free! </p>
+                
+          </div>
+          <div class="bodypic">
+               <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/6213e940eee2371887ae7e72_61cc95a822c5d589c6de8c83_01_Winter2_SesameGingerChickenNoodles_OH_2048x1365.jpeg">
+          </div>
+      </div>
+      <div class="body2">
+          <div class="bodypic">
+              <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/6213e940eee237f01aae7e73_61cc95ca384fe2272fab2863_21_Winter2_VeggieShephedsPie_Ingredients_C123301.jpeg" alt="">
+          </div>
+          <div class="bodytext">
+              <h4>A Fresh Approach</h4>
+              <h2>Replace Traditional with Nutritional</h2>
+              <p>Healthy just got stealthy. We take full advantage of gluten- and dairy-free recipes that incorporate whole-food ingredients to make your meals nutritious, delicious, and dairy-free. How do we do it?</p>
+                <li> <b>We swap out traditional dairy</b> and add creaminess from coconut milk and plant-based buttery spreads made from seeds and nuts.</li>
+                <li> <b>We sneak in the veggies: </b>unexpected twists that we add to sauces (like our 8-veggie marinara) and other parts of our meals.</li>
+                <li><b>We emphasize the good: </b>our meals are loaded with nutrient-dense ingredients, complex carbs, and quality proteins.</li>
+          </div>
+      </div>
+      <div class="body3">
+          <div class="bodytext">
+            <h4>Dairy-Free Made Better?</h4>
+            <h2>The Secret's in the Sauce</h2>
+            <p>A good sauce can bring any dish together and turn it into something truly satisfying. It’s also our secret weapon for some of our most popular, better-for-you meals. We replace heavy cream with nutrient-packed powerhouses like squash and cauliflower to give our sauces extra creaminess and thicken things up with nut butters instead of flour. We also use natural sweeteners like honey and coconut sap rather than adding artificial sources like corn syrup. </p>
+                
+          </div>
+          <div class="bodypic">
+              <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/6213e940eee2372419ae7e71_61cc95e4dfc204fee06befe8_21_Fall1_AncientGrainChickenPilaf_Macro_C115651.jpeg" alt="">
+          </div>
+      </div>
+ <!-- bottom -->
+      <div id="bottom1">
+          <h3>Our Dairy-Free Favorites</h3>
+            <p>Choose from a wide variety of dishes and find the best dairy-free meals for you. We’ve curated a few of our top fan faves from our Signature, Chef’s Special, and Purely Plant lineups to give you some inspiration and help get you started:</p>
+      </div>
+      <div id="bottom2">
+          <div><img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6beaaa4db1adb2444280_production-meal-without-background-image-eb9ffd87-bf7e-4a3e-8999-275c8c0872ea.png" alt="">
+            <p><b>Baja Pork Bowl</b></p>
+            <p><i>with Chile Verde & Bright Veggie Medley</i></p>
+          </div>
+          <div>
+              <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bc1b3af4027b353c094_production-meal-without-background-image-07b15228-eb98-48c9-a543-4587eb92a464.png" alt="">
+              <p><b>Unwrapped Salsa Verde Burrito</b></p>
+              <p><i>with Purely Plant Crumbles</i></p>
+          </div>
+          <div>
+              <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bee549a61e183e06914_production-meal-without-background-image-282c8091-637b-47b7-a3cc-efe5e06c0aaf.png" alt="">
+              <p><b>Chipotle Chicken Bowl</b></p>
+              <p><i>with Carb-Smart Cauli Rice</i></p>
+          </div>
+          <div>
+              <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/6106400aa25771c4b635c7a9_production-meal-without-background-image-5dfc9704-6e2f-4d1c-93ea-0a5f1b2b51a0.png" alt="">
+              <p><b>Chicken Livorno
+            </b></p>
+              <p><i>with Hearty White Beans & Kale</i></p>
+          </div>
+      </div>
+      <div id="bottomButton"><button><a href="./planAndMenu.html">See More Meals</a></button></div>
+</body>
+    <script>
+    </script>
+</html>

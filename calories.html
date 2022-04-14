@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calorie-conscious</title>
+    <style>
+/* universal */
+        *{
+            font-family: sans-serif;
+            color: #333333;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+ /*navBar  */
+       #outerDiv{
+          height: 30px;
+          display:grid;
+          grid-template-columns: 1fr 4fr 1fr;
+      }
+      #outerDiv>div{
+          display: flex;
+          justify-content: space-evenly;
+          font-size: 10px;
+          padding: 2%;
+          
+      }
+      #innerDiv1>a>img{
+          height: 10px;
+          width: 50px;
+          padding: 5%;
+      }
+      #innerDiv3>div{
+          padding: 5%;
+      }
+      #innerDiv2>div{
+          font-size: 7px;
+          font-family: sans-serif;
+          color: #333333;
+          font-weight: bold;
+      }
+      #signUp{
+          background-color: #3167ff;
+          color: white;
+          
+      }
+
+ /* top */
+      #image{
+          box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+      }
+      #image>img{
+          height: 200px;
+          width: 100%;
+      }
+      #top1{
+          width: 55%;
+          text-align: center;
+          margin: auto;
+      }
+      #top1>h1{
+          font-size: 28px;
+          color: #333333;
+      }
+      #top1>p{
+          font-size: 8.5px;
+          color: #333333;
+      }
+      #top1>button{
+          background-color: #3167ff;
+          border: none;
+          padding: 2%;
+          margin-top: 15px;
+          font-size: 8px;
+          color: white;
+      }
+
+
+
+/* body */
+      .body1{
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+          margin-top: 50px;
+          height: auto;
+      }
+      .body1pic>img{
+          width: 100%;
+          height: 100%;
+      }
+      .body2{
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+          height: auto;
+      }
+      .body2pic>img{
+          width: 100%;
+          height: 100%;
+      }
+      .body3{
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+          height: auto;
+      }
+      .bodypic>img{
+        width: 100%;
+          height:100%;
+      }
+      .bodytext{
+          display: flex;
+          flex-direction: column;
+          justify-items: center;
+          justify-content: center;
+          margin-left: 5px;
+      }
+      .bodytext>button{
+          width: 40%;
+          background-color: #3167ff;
+          font-size: 9px;
+          padding: 2%;
+          border: none;
+          color: white;
+          margin-top: 20px;
+      }
+      .bodytext>h4{
+          font-size: 10px;
+      }
+      .bodytext>h2{
+          font-size: 18px;
+      }
+      .bodytext>p,li{
+          font-size: 7px;
+      }
+
+ /* bottom */
+      #bottom1{
+          width: 40%;
+          margin: auto;
+      }
+      #bottom1>h3{
+          text-align: center;
+      }
+      #bottom1>p{
+          font-size: 7px;
+          text-align: center;
+      }
+      #bottom2{
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          height: auto;
+
+      }
+      #bottom2>div{
+          margin: auto;
+          text-align: center;
+      }
+      #bottom2>div>img{
+          height: 50px;
+          width: 50px;
+      }
+      #bottom2>div>p{
+          font-size: 9px;
+      }
+      #bottomButton{
+          margin: auto;
+          width: 115px;
+         
+      }
+      #bottomButton>button{
+        background-color: #3167ff;
+          border: none;
+          color: white;
+          font-size: 10px;
+          padding: 5%;
+      }
+    </style>
+</head>
+<body>
+<!-- navBar -->
+    <div id="outerDiv">
+        <div id="innerDiv1">
+               <a href="./planAndMenu.html"><img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg" alt=""></a>
+        </div>
+        <div id="innerDiv2">
+            <div>Plans & Menus</div>
+            <div>How it Works</div>
+            <div>Gift</div>
+            <div>Refer a Friend</div>
+            <div>Help</div>
+        </div>
+        <div id="innerDiv3">
+            <div>login</div>
+            <div id="signUp">signUp</div>
+        </div>
+      </div>  
+<!-- body -->
+      <div id="image">
+         <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/6213e9441ce43c4c27b06292_61cc96cb567b1dd15e7bc382_20_Fall2_FreshlyFitGroupShot_OH_comped_V2.jpeg" alt="">
+      </div>
+      <div id="top1">
+          <h1>Calorie-Conscious Meals Made Full-On Delicious</h1>
+          <p>Finding it hard to fit satisfying, low-calorie meals into your life? It doesn’t have to be. Our culinary lineup features crave-worthy, calorie-conscious dishes that are ready at a moment’s notice.
+
+            Perfectly portioned. Completely effortless. Full-on delicious. Our low-calorie meal options* provide the nourishment you need to feed your busiest days and leave you feeling light. That’s how we do better-for-you: feel-good flavors, made from real whole foods.</p>
+          <button><a href="./planAndMenu.html">View Plans & Menu</a></button>
+      </div>
+      <div class="body1">
+          <div class="bodytext">
+            <h4>Need a Low-Calorie Meal Plan?</h4> 
+            <h2>Find the Right Fit</h2> 
+            <p>Our FreshlyFit lineup features calorie-conscious dishes that are perfectly portioned, nutritionist-approved, and lick-the-plate delicious, so you can watch your calorie count and still get all the benefits of a satisfying, fully balanced meal.  </p>
+                <li>Clean, whole-food ingredients for full-day hustle</li>
+                <li>550 calories or less in every FreshlyFit mea</li>
+                <li>Carb-conscious options with less than 20g of carbs per serving</li>
+          </div>
+          <div class="bodypic">
+               <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/6213e9441ce43c71adb06290_61cc97340ea54b6f5acb01fd_01_20_Fall2_ChickenLivorno_OH_2048x1365.jpeg">
+          </div>
+      </div>
+      <div class="body2">
+          <div class="bodypic">
+              <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/6213e9441ce43cbebbb06291_61cc9787271114630912956b_20_PackagingComp_Fit_Female_SleeveStack.jpeg" alt="">
+          </div>
+          <div class="bodytext">
+              <h2>Portions</h2>
+              <p>Thought low-calorie meal prep was hard? Think again. Our dedicated nutritionist and chefs design calorie-smart mealtime choices that can be enjoyed by one person at one sitting—so you can spend less time meal prepping, more time doing what you love, and get the most out of every day. </p>
+                <li> Thoughtfully portioned, flavor-packed meals  </li>
+                Calorie-conscious dishes that help you crush cravings</li>
+                <li>Easy-to-use interface that lets you sort meals by calorie count—online or with the Freshly App</li>
+          </div>
+      </div>
+      <div class="body3">
+          <div class="bodytext">
+            <h4>Awaken Your Brightest Self</h4>
+            <h2>Nutritious Meals for New Routines</h2>
+            <p>Hitting your fitness goals begins with a commitment to eating better. But how do you start? Enter our nutritionist & chefs. Their culinary craft and health-minded mastery combine to replace confusing diets with an easy weekly plan—one that makes meal planning as effortless as swipe, tap, done. It’s more than just a prepared meal, it’s a prepared you.</p>
+                <li>Nutritious ingredient swaps in meals designed to be better</li>
+                <li>No shopping, pre-portioning, or cooking—it’s ALL done for you!</li>
+                <li>The perfect balance between carbs, calories, and feel-good flavors</li>
+          </div>
+          <div class="bodypic">
+              <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/6213e9441ce43cce47b06293_61cc97d725ea5d5232a42ba8_20_PhoneComp_Fit_Male_ChangeMeals.jpeg" alt="">
+          </div>
+      </div>
+ <!-- bottom -->
+      <div id="bottom1">
+          <h3>Our Calorie-Conscious Favorites.</h3>
+            <p>Find the best low-calorie meals for you. Explore the rich variety of flavors and internationally-inspired dishes that make up our rotating menu. Here are just a few our favorite low-calorie meal ideas* to get you started:</p>
+      </div>
+      <div id="bottom2">
+          <div><img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bee549a61e183e06914_production-meal-without-background-image-282c8091-637b-47b7-a3cc-efe5e06c0aaf.png" alt="">
+            <p><b>Chipotle Chicken Bowl</b></p>
+            <p><i>with Carb-Smart Cauli Rice</i></p>
+          </div>
+          <div>
+              <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/610640046931cb207cbd5471_production-meal-without-background-image-db054cab-1df2-4252-a308-0dba3b172311.png" alt="">
+              <p><b>Protein-Packed Chicken Parm</b></p>
+              <p><i>with Mozzarella & Garlicky Broccoli</i></p>
+          </div>
+          <div>
+              <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6c13fa4a1562aecc96d5_production-meal-without-background-image-df2f15dd-bea4-489b-ac1c-2a47717cf559.png" alt="">
+              <p><b>Indian-Spiced Chickpea Curry Bowl</b></p>
+              <p>with Basmati Rice, Lentils & Veggies</p>
+          </div>
+      </div>
+      <div id="bottomButton"><button><a href="./planAndMenu.html">See More Meals</a></button></div>
+</body>
+    <script>
+    </script>
+</html>

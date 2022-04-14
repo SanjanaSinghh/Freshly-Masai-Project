@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gluten-free</title>
+    <style>
+/* universal */
+        *{
+            font-family: sans-serif;
+            color: #333333;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+ /*navBar  */
+       #outerDiv{
+          height: 30px;
+          display:grid;
+          grid-template-columns: 1fr 4fr 1fr;
+      }
+      #outerDiv>div{
+          display: flex;
+          justify-content: space-evenly;
+          font-size: 10px;
+          padding: 2%;
+          
+      }
+      #innerDiv1>a>img{
+          height: 10px;
+          width: 50px;
+          padding: 5%;
+      }
+      #innerDiv3>div{
+          padding: 5%;
+      }
+      #innerDiv2>div{
+          font-size: 7px;
+          font-family: sans-serif;
+          color: #333333;
+          font-weight: bold;
+      }
+      #signUp{
+          background-color: #3167ff;
+          color: white;
+          
+      }
+
+ /* top */
+      #image{
+          box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+      }
+      #image>img{
+          height: 200px;
+          width: 100%;
+      }
+      #top1{
+          width: 55%;
+          text-align: center;
+          margin: auto;
+      }
+      #top1>h1{
+          font-size: 28px;
+          color: #333333;
+      }
+      #top1>p{
+          font-size: 8.5px;
+          color: #333333;
+      }
+      #top1>button{
+          background-color: #3167ff;
+          border: none;
+          padding: 2%;
+          margin-top: 15px;
+          font-size: 8px;
+          color: white;
+      }
+
+
+
+/* body */
+      .body1{
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+          margin-top: 50px;
+          height: auto;
+      }
+      .body1pic>img{
+          width: 100%;
+          height: 100%;
+      }
+      .body2{
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+          height: auto;
+      }
+      .body2pic>img{
+          width: 100%;
+          height: 100%;
+      }
+      .body3{
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+          height: auto;
+      }
+      .bodypic>img{
+        width: 100%;
+          height:100%;
+      }
+      .bodytext{
+          display: flex;
+          flex-direction: column;
+          justify-items: center;
+          justify-content: center;
+          margin-left: 5px;
+      }
+      .bodytext>button{
+          width: 40%;
+          background-color: #3167ff;
+          font-size: 9px;
+          padding: 2%;
+          border: none;
+          color: white;
+          margin-top: 20px;
+      }
+      .bodytext>h4{
+          font-size: 10px;
+      }
+      .bodytext>h2{
+          font-size: 18px;
+      }
+      .bodytext>p,li{
+          font-size: 7px;
+      }
+
+ /* bottom */
+      #bottom1{
+          width: 40%;
+          margin: auto;
+      }
+      #bottom1>h3{
+          text-align: center;
+      }
+      #bottom1>p{
+          font-size: 7px;
+          text-align: center;
+      }
+      #bottom2{
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          height: auto;
+
+      }
+      #bottom2>div{
+          margin: auto;
+          text-align: center;
+      }
+      #bottom2>div>img{
+          height: 50px;
+          width: 50px;
+      }
+      #bottom2>div>p{
+          font-size: 9px;
+      }
+      #bottomButton{
+          margin: auto;
+          width: 115px;
+         
+      }
+      #bottomButton>button{
+        background-color: #3167ff;
+          border: none;
+          color: white;
+          font-size: 10px;
+          padding: 5%;
+      }
+    </style>
+</head>
+<body>
+<!-- navBar -->
+    <div id="outerDiv">
+        <div id="innerDiv1">
+               <a href="./planAndMenu.html"><img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg" alt=""></a>
+        </div>
+        <div id="innerDiv2">
+            <div>Plans & Menus</div>
+            <div>How it Works</div>
+            <div>Gift</div>
+            <div>Refer a Friend</div>
+            <div>Help</div>
+        </div>
+        <div id="innerDiv3">
+            <div>login</div>
+            <div id="signUp">signUp</div>
+        </div>
+      </div>  
+<!-- body -->
+      <div id="image">
+         <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/6213e943a065c403856bf25e_613231171ce69b80db2ee587_GLUTEN-FREE_HERO.jpeg" alt="">
+      </div>
+      <div id="top1">
+          <h1>Gluten-free meals never tasted so good</h1>
+          <p>You can officially stop searching “gluten-free food near me.” Why? Because nearly all of our meals are certified gluten-free and made in kitchens that are 100% certified by the Gluten Intolerance Group (GIG). 
+
+            That means you can explore new gluten-free meals or embrace an entirely gluten-free diet—all without ever skimping on taste or variety.</p>
+          <button><a href="./planAndMenu.html">View Plans & Menu</a></button>
+      </div>
+      <div class="body1">
+          <div class="bodytext">
+            <h4>Our Promise</h4> 
+            <h2>Certification you can trust</h2> 
+            <p>We take gluten-free food (and cooking) seriously—and your trust is our #1. Because gluten-free meals are only as good as the kitchens they’re prepared in, we make sure our space is guaranteed safe:</p>
+                <li>Freshly is certified as a gluten-free food service by the Gluten Intolerance Group</li>
+                <li>We balance smart ingredient swaps with nutritious, whole foods that are naturally gluten-free. Craving gluten-free pasta? We got you covered</li>
+                <li>While we do offer some products that contain gluten, our extensive selection of gluten-free meals comes from 100% gluten-free kitchens</li>
+            <!-- <button><a href="./planAndMenu.html">View The Meals</a></button> -->
+          </div>
+          <div class="bodypic">
+               <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/6213e943a065c42d646bf25f_61323120f5be334cb7950d3b_GLUTEN-FREE_IMAGE_1.jpeg">
+          </div>
+      </div>
+      <div class="body2">
+          <div class="bodypic">
+              <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/6213e943a065c450856bf260_6132312905826fa222033b49_GLUTEN-FREE_IMAGE_2.jpeg" alt="">
+          </div>
+          <div class="bodytext">
+              <h4>Full of Delicious Options</h4>
+              <h2>No Meal Prep, No Compromises</h2>
+              <p>With so many tasty, gluten-free meals to choose from, you’ll never get bored—and you won’t even have to cook: </p>
+                <li> Order any meals from our menu labeled as gluten-free </li>
+                <li> Switch it up as often as you like (we release new meals every week!)</li>
+                <li>Enjoy gluten-free meal delivery made easy. Simply choose from our extensive menu, order online, and have it shipped to your door</li>
+              <!-- <button><a href="./planAndMenu.html">Explore Our Lineup</a></button> -->
+          </div>
+      </div>
+ <!-- bottom -->
+      <div id="bottom1">
+          <h3>Gluten-Free Favorites</h3>
+            <p><b>Enjoy a New Spin on the Classics:</b> savoring gluten-free meals shouldn’t mean saying goodbye to your favorite foods. Here are some culinary mainstays that we’ve made completely free of gluten, using clever whole-food swaps:</p>
+      </div>
+      <div id="bottom2">
+          <div><img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6b82fa4a1576e8cc510f_production-meal-without-background-image-3c327134-2073-4b4a-9e97-a81597e5d689.png" alt="">
+            <p><b>Steak Peppercorn</b></p>
+            <p><i>with Sautéed Carrots & French Green Beans</i></p>
+          </div>
+          <div>
+              <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6b8686c6705eb20e7d42_production-meal-without-background-image-6cadf26d-addc-4674-bfb3-3255cd770ebd.png" alt="">
+              <p><b>Homestyle Chicken</b></p>
+              <p><i>with Masterful Mac & Cheese</i></p>
+          </div>
+          <div>
+              <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/610640046931cb207cbd5471_production-meal-without-background-image-db054cab-1df2-4252-a308-0dba3b172311.png" alt="">
+              <p><b>Protein-Packed Chicken Parm</b></p>
+              <p><i>with Mozzarella & Garlicky Broccoli</i></p>
+          </div>
+          <div>
+              <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6b89b73573e5bf897a4d_production-meal-without-background-image-964a7d18-a670-4e0d-8007-b50d22d07b79.png" alt="">
+              <p><b>Cauliflower Shell Beef Bolognese</b></p>
+              <p><i>with Nonna’s Soffritto & Italian Cheeses</i></p>
+          </div>
+      </div>
+      <div id="bottomButton"><button><a href="./planAndMenu.html">See More Meals</a></button></div>
+</body>
+    <script>
+    </script>
+</html>

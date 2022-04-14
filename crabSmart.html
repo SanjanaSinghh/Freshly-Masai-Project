@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crab-smart</title>
+    <style>
+/* universal */
+        *{
+            font-family: sans-serif;
+            color: #333333;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+ /*navBar  */
+       #outerDiv{
+          height: 30px;
+          display:grid;
+          grid-template-columns: 1fr 4fr 1fr;
+      }
+      #outerDiv>div{
+          display: flex;
+          justify-content: space-evenly;
+          font-size: 10px;
+          padding: 2%;
+          
+      }
+      #innerDiv1>a>img{
+          height: 10px;
+          width: 50px;
+          padding: 5%;
+      }
+      #innerDiv3>div{
+          padding: 5%;
+      }
+      #innerDiv2>div{
+          font-size: 7px;
+          font-family: sans-serif;
+          color: #333333;
+          font-weight: bold;
+      }
+      #signUp{
+          background-color: #3167ff;
+          color: white;
+          
+      }
+
+ /* top */
+      #image{
+          box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+      }
+      #image>img{
+          height: 200px;
+          width: 100%;
+      }
+      #top1{
+          width: 55%;
+          text-align: center;
+          margin: auto;
+      }
+      #top1>h1{
+          font-size: 28px;
+          color: #333333;
+      }
+      #top1>p{
+          font-size: 8.5px;
+          color: #333333;
+      }
+      #top1>button{
+          background-color: #3167ff;
+          border: none;
+          padding: 2%;
+          margin-top: 15px;
+          font-size: 8px;
+          color: white;
+      }
+
+
+
+/* body */
+      .body1{
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+          margin-top: 50px;
+          height: auto;
+      }
+      .body1pic>img{
+          width: 100%;
+          height: 100%;
+      }
+      .body2{
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+          height: auto;
+      }
+      .body2pic>img{
+          width: 100%;
+          height: 100%;
+      }
+      .body3{
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+          height: auto;
+      }
+      .bodypic>img{
+        width: 100%;
+          height:100%;
+      }
+      .bodytext{
+          display: flex;
+          flex-direction: column;
+          justify-items: center;
+          justify-content: center;
+          margin-left: 5px;
+      }
+      .bodytext>button{
+          width: 40%;
+          background-color: #3167ff;
+          font-size: 9px;
+          padding: 2%;
+          border: none;
+          color: white;
+          margin-top: 20px;
+      }
+      .bodytext>h4{
+          font-size: 10px;
+      }
+      .bodytext>h2{
+          font-size: 18px;
+      }
+      .bodytext>p,li{
+          font-size: 7px;
+      }
+
+ /* bottom */
+      #bottom1{
+          width: 40%;
+          margin: auto;
+      }
+      #bottom1>h3{
+          text-align: center;
+      }
+      #bottom1>p{
+          font-size: 7px;
+          text-align: center;
+      }
+      #bottom2{
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          height: auto;
+
+      }
+      #bottom2>div{
+          margin: auto;
+          text-align: center;
+      }
+      #bottom2>div>img{
+          height: 50px;
+          width: 50px;
+      }
+      #bottom2>div>p{
+          font-size: 9px;
+      }
+      #bottomButton{
+          margin: auto;
+          width: 115px;
+         
+      }
+      #bottomButton>button{
+        background-color: #3167ff;
+          border: none;
+          color: white;
+          font-size: 10px;
+          padding: 5%;
+      }
+    </style>
+</head>
+<body>
+<!-- navBar -->
+    <div id="outerDiv">
+        <div id="innerDiv1">
+               <a href="./planAndMenu.html"><img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg" alt=""></a>
+        </div>
+        <div id="innerDiv2">
+            <div>Plans & Menus</div>
+            <div>How it Works</div>
+            <div>Gift</div>
+            <div>Refer a Friend</div>
+            <div>Help</div>
+        </div>
+        <div id="innerDiv3">
+            <div>login</div>
+            <div id="signUp">signUp</div>
+        </div>
+      </div>  
+<!-- body -->
+      <div id="image">
+         <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/6213e9455c45024213c451dd_61cc9b420d56a10820ad15ea_21_Fall2_FreshlyFitGroupShot_OH_comped.jpeg" alt="">
+      </div>
+      <div id="top1">
+          <h1>Carb-Smart Meals Made 3-Minute Easy</h1>
+          <p>Low-carb recipe this, low-carb meal plan that—​​watching your carbs can feel like you’re riding a rollercoaster. FreshlyFit puts an end to the ups and downs of “all or nothing” crash diets with a more sustainable approach that makes balancing carbs and enjoying great food easier than ever.</p>
+          <button><a href="./planAndMenu.html">View Plans & Menu</a></button>
+      </div>
+      <div class="body1">
+          <div class="bodytext">
+            <h4>Make Your Carbs Count</h4> 
+            <h2>Make Room for the Good</h2> 
+            <p>Counting your carbs? We think you should make every carb count. That’s why we created FreshlyFit—carb- and calorie-conscious meals that help replace empty carbs and excess sugars with complex carbs that work hard. So what does “carb-conscious” mean to us? </p>
+                <li>Thoughtfully designed, chef-crafted, nutritionist-approved meals featuring 20g of carbs or less</li>
+                <li>Whole-food ingredients that form the foundation of flavor-rich meals</li>
+                <li><b>Nutrient-dense dishes with essential dietary fiber that helps you feel satisfied longer</li>
+            <button><a href="./planAndMenu.html">View The Meals</a></button>
+          </div>
+          <div class="bodypic">
+               <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/6213e9455c4502b0f3c451e0_61cc9e63c36b5a0e523a18db_Protein-Packed-Chicken-Parm-Isolated.png">
+          </div>
+      </div>
+      <div class="body2">
+          <div class="bodypic">
+              <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/6213e9455c45025624c451de_61cc9ea227836c413bbe1c27_BI1A8856.jpeg" alt="">
+          </div>
+          <div class="bodytext">
+              <h2>Savor Something Better</h2>
+              <p>Tired of all the sugar highs and resulting carb crashes? So were we. That’s why we created nourishing meals you can keep in the fridge and enjoy easily on your schedule—so you can avoid the foods that bring you down and get more of the foods that help you push ahead. </p>
+                <li>Hardworking, quality carbs in every meal</li>
+                <li>Dishes designed to nourish your lifestyle</li>
+                <li>Meals that help you avoid the midday carb crashes that slow you down</li>
+              <button><a href="./planAndMenu.html">Explore Our Lineup</a></button>
+          </div>
+      </div>
+      <div class="body3">
+          <div class="bodytext">
+            <h4>Healthy Just Got Stealthy</h4>
+            <h2>Nutritious that’s Full-On Delicious</h2>
+            <p>We swap out high-carb ingredients throughout our meals and replace them with something better, like veggie- and protein-forward alternatives that make delicious surprisingly nutritious. How do we make carb-conscious meals so remarkably easy?  </p>
+                <li>Zucchini noodles (“zoodles”) in place of traditional carb-heavy pasta</li>
+                <li>Gluten-free almond flour instead of breadcrumbs—the secret charm to our chicken parm</li>
+                <li>Masterful mash with carb-smart cauliflower and greek yogurt </li>
+            <p>Need an easy way to find low-carb meals? Simply sort by carbs online or with the Freshly App and discover a variety of carb-conscious meals with only a click or a tap.</p>
+            <button><a href="./planAndMenu.html">Explore Our Lineup</a></button>
+          </div>
+          <div class="bodypic">
+              <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/6213e9455c45028030c451df_61cc9f2704a46597bc0169e3_01_Fall1_TurkeyMeatballsEightVeggieRagu_OH_2048x1365.jpeg" alt="">
+          </div>
+      </div>
+ <!-- bottom -->
+      <div id="bottom1">
+          <h3>Carb-Conscious Must-Haves
+
+          </h3>
+            <p>Taking a more carb-mindful approach? Check out a few of our favorite FreshlyFit meals to help complement your low-carb meal plan:</p>
+      </div>
+      <div id="bottom2">
+          <div><img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bfaee61ff67b7e00517_production-meal-without-background-image-2db8c4ff-b3bb-43aa-a9be-7141c33d14b3.png" alt="">
+            <p><b>Very Verde Chicken</b></p>
+            <p><i>with Super Greens & Roasted Cauliflower</i></p>
+          </div>
+          <div>
+              <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6b9a85b43cece9a0a3b1_production-meal-without-background-image-859e2315-ebbb-4caa-9a83-f230e0d75122.png" alt="">
+              <p><b>IZingy Buffalo Chicken</b></p>
+              <p><i>with Loaded Cauliflower</i></p>
+          </div>
+          <div>
+              <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bae406d13e1d68de8cb_production-meal-without-background-image-4fa221b4-6b00-43af-92f2-bdbfd9f86187.png" alt="">
+              <p><b>Oven-Baked Chicken Florentine</b></p>
+              <p><i>with Creamed Spinach & Riced Broccoli Pilaf</i></p>
+          </div>
+      </div>
+      <div id="bottomButton"><button><a href="./planAndMenu.html">See More Meals</a></button></div>
+</body>
+    <script>
+    </script>
+</html>
