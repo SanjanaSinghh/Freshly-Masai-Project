@@ -4,61 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
     <title>login</title>
-    <style>
-        body{
-            background-color: rgb(250, 242, 243);
-        }
-        .navbar{
-            height: 80px;
-            width: 135%;
-            display: flex;
-            background-color: white;
-        }
-         #nav{
-            margin: 0;
-            justify-content: space-between;
-            display: flex;
-         } 
-         #nav p{
-            padding: 2px 16px;
-         } 
-       #right{
-        padding-left: 400px;
-            font-size: 25px;
-            display: flex;
-            cursor: pointer;
-       }
-       #right p{
-          padding: 2px 16px;
-        }
-        #body{
-        height: 324px;
-        width: 25%;
-        margin-left: 35%;
-        margin-top: 5%;
-        padding-left: 3%;
-        padding-top: 1%;
-        
-        border-color: rgb(92, 142, 142) 10px solid;
-        border: none;
-        }
-        #body h1{
-            font-size: 45px;
-            margin: 0;
-            text-align: center;
-           
-        }
-        input{
-            height: 32px;
-            width: 550px;
-        }
-        #foot{
-            border-top: 1px solid gray; 
-            background-color: white;
-            height: 238px;
-        }
-    </style>
 </head>
 <body>
         <div class="navbar">
@@ -97,52 +44,48 @@
         </form>
        </div>
 
+
        <div id="foot">
         <div style="width: 10%;">
-            <img style="height: 73px; width: 123px; padding-left: 250px; margin-top: 0;"
+            <img style="height: 73px; width: 123px; padding-left: 300px; margin-top: 0;"
                 src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
-                alt=""><p style="height: 20px; width: 123px; padding-left: 250px; margin-top: 0;">Freshly Inc.</p>
+                alt=""><p style="height: 20px; width: 123px; padding-left: 300px; margin-top: 0;color: gray;">ⒸFreshly Inc.</p>
         </div>
-       <div>
-        <p>Company</p>
-       <a>Careers</a>
-       <a>Contact Us</a>
-       <a>Press</a>
-       <a>Terms</a>
-       <a>Privacy</a>
+
+       <div id="sin">
+        <p style="height: 20px; width: 123px; padding-left: 250px; margin-top: 0;font-size: larger;font-weight: bold;" >Company</p>
+       <a href="careers.html">Careers</a><br>
+       <a href="contact.html">Contact Us</a><br>
+       <a href="press.html">Press</a><br>
+       <a href="terms.html">Terms</a><br>
+       <a href="privacy.html">Privacy</a>
        </div>
-       <div></div>
-       <div></div>
+
+       <div id="Lmore">
+           <p style="height: 20px; width: 123px; margin-top: 0;font-size: larger;font-weight: bold;">Learn More</p>
+           <a href="planAndMenu.html">Plans & Menu</a><br>
+           <a href="whyFreshly.html">Why Freshly?</a><br>
+           <a href="gifts.html">Gifts</a><br>
+           <a href="refer.html">Refer a Friend</a><br>
+           <a href="faq.html">FAQs</a><br>
+           <a href="blog.html">Blog</a><br>
+           <a href="student.html">Students</a>
+       </div>
+
+       <div id="jus">
+       <p style="height: 20px; width: 123px; margin-top: 0;font-size: larger;font-weight: bold;">Join Us</p>
+       <div id="imag">
+       <a href="https://www.facebook.com/freshly"target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/1384/1384005.png"></a>
+       <a href="https://www.instagram.com/freshly/"target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png"></a>
+       <a href="https://twitter.com/freshly"target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/733/733635.png"></a>
+       </div>
+       <a href="https://apps.apple.com/app/apple-store/id1195648107"target="_blank"><img  style="height: 70px;width: 173px;padding-right:50px ;" src="https://www.freepnglogos.com/uploads/app-store-logo-png/download-on-the-app-store-logo-png-23.png"></a>
+       <a href="https://play.google.com/store/apps/details?id=com.freshly.meal&utm_source=website&utm_campaign=footer&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"target="_blank"><img style="height: 46px;width: 174px;padding-right:50px ;" src="https://www.logo.wine/a/logo/Google_Play/Google_Play-Badge-Logo.wine.svg"></a>
+       </div>
        </div>
         </div>
     
 </body>
-<script>
-      document.querySelector('form').addEventListener('submit',logfn);
-    function logfn(){
-    var regisUs = JSON.parse(localStorage.getItem('usdata'));
-    if(regisUs==null){
-        alert('not found')
-        window.location.reload()
-        return
-    }
-    event.preventDefault();
-    var givemail = document.querySelector('#email').value;
-    var givpass = document.querySelector('#password').value;
-
-   regisUs.forEach(usdata => {
-       if(usdata.email===givemail && usdata.password===givpass){
-           alert('Login Successful');
-           localStorage.setItem('curser',name)
-           sanjana=true
-           window.location.href = 'index.html';
-       }
-      
-   });
-   if(sanjana==false){
-       alert("invalid credentials")
-   }
-
-    }
+<script src="login.js">
 </script>
 </html>
