@@ -15,7 +15,7 @@ regisUs.forEach(usdata => {
        alert('Login Successful');
        localStorage.setItem('curser',name)
        sanjana=true
-       window.location.href = 'index.html';
+       window.location.href = 'home.html';
    }
   
 });
