@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purely Plant</title>
+    <style>
+/* universal */
+        *{
+            font-family: sans-serif;
+            color: #333333;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+ /*navBar  */
+       #outerDiv{
+          height: 30px;
+          display:grid;
+          grid-template-columns: 1fr 4fr 1fr;
+      }
+      #outerDiv>div{
+          display: flex;
+          justify-content: space-evenly;
+          font-size: 10px;
+          padding: 2%;
+          
+      }
+      #innerDiv1>a>img{
+          height: 10px;
+          width: 50px;
+          padding: 5%;
+      }
+      #innerDiv3>div{
+          padding: 5%;
+      }
+      #innerDiv2>div{
+          font-size: 7px;
+          font-family: sans-serif;
+          color: #333333;
+          font-weight: bold;
+      }
+      #signUp{
+          background-color: #3167ff;
+          color: white;
+          
+      }
+
+ /* top */
+      #image{
+          box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+      }
+      #image>img{
+          height: 200px;
+          width: 100%;
+      }
+      #top1{
+          width: 55%;
+          text-align: center;
+          margin: auto;
+      }
+      #top1>h1{
+          font-size: 28px;
+          color: #333333;
+      }
+      #top1>p{
+          font-size: 8.5px;
+          color: #333333;
+      }
+      #top1>button{
+          background-color: #3167ff;
+          border: none;
+          padding: 2%;
+          margin-top: 15px;
+          font-size: 8px;
+          color: white;
+      }
+
+
+
+/* body */
+      .body1{
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+          margin-top: 50px;
+          height: auto;
+      }
+      .body1pic>img{
+          width: 100%;
+          height: 100%;
+      }
+      .body2{
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+          height: auto;
+      }
+      .body2pic>img{
+          width: 100%;
+          height: 100%;
+      }
+      .body3{
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+          height: auto;
+      }
+      .bodypic>img{
+        width: 100%;
+          height:100%;
+      }
+      .bodytext{
+          display: flex;
+          flex-direction: column;
+          justify-items: center;
+          justify-content: center;
+          margin-left: 5px;
+      }
+      .bodytext>button{
+          width: 40%;
+          background-color: #3167ff;
+          font-size: 9px;
+          padding: 2%;
+          border: none;
+          color: white;
+          margin-top: 20px;
+      }
+      .bodytext>h4{
+          font-size: 10px;
+      }
+      .bodytext>h2{
+          font-size: 18px;
+      }
+      .bodytext>p,li{
+          font-size: 7px;
+      }
+
+ /* bottom */
+      #bottom1{
+          width: 40%;
+          margin: auto;
+      }
+      #bottom1>h3{
+          text-align: center;
+      }
+      #bottom1>p{
+          font-size: 7px;
+          text-align: center;
+      }
+      #bottom2{
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          height: auto;
+
+      }
+      #bottom2>div{
+          margin: auto;
+          text-align: center;
+      }
+      #bottom2>div>img{
+          height: 50px;
+          width: 50px;
+      }
+      #bottom2>div>p{
+          font-size: 9px;
+      }
+      #bottomButton{
+          margin: auto;
+          width: 115px;
+         
+      }
+      #bottomButton>button{
+        background-color: #3167ff;
+          border: none;
+          color: white;
+          font-size: 10px;
+          padding: 5%;
+      }
+    </style>
+</head>
+<body>
+<!-- navBar -->
+    <div id="outerDiv">
+        <div id="innerDiv1">
+               <a href="./planAndMenu.html"><img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg" alt=""></a>
+        </div>
+        <div id="innerDiv2">
+            <div>Plans & Menus</div>
+            <div>How it Works</div>
+            <div>Gift</div>
+            <div>Refer a Friend</div>
+            <div>Help</div>
+        </div>
+        <div id="innerDiv3">
+            <div>login</div>
+            <div id="signUp">signUp</div>
+        </div>
+      </div>  
+<!-- body -->
+      <div id="image">
+         <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/6213e94675502f3f632a400a_613a18f65427bd1e17ca8eb7_1PLANT-BASED_HERO%2520(1).jpeg" alt="">
+      </div>
+      <div id="top1">
+          <h1>Introducing: Purely Plant. Plant-Based, Protein Powered.</h1>
+          <p>Seriously satisfying meals featuring our new plant-based protein. Made from clean, whole-food ingredients and delivered to you fresh. That’s Purely Plant—our new plant-based meal plan that gives you more freedom and flexibility to eat better and feel your best.</p>
+          <button><a href="./planAndMenu.html">View Plans & Menu</a></button>
+      </div>
+      <div class="body1">
+          <div class="bodytext">
+            <h4>Nutritious, Naturally.</h4> 
+            <h2>Good from the Ground Up</h2> 
+            <p>With Purely Plant, you can enjoy plant-based meals that are powerful, flavorful, and satisfying—made from wholesome foods you can feel good about. It’s a deliciously simple, effortless approach to plant-based meal delivery: </p>
+                <li><b>Clean plant protein</b> crafted from peas, chickpeas, and lentils</li>
+                <li><b>Vibrant veggies added</b> to every meal by our chefs</li>
+                <li><b>Nutritionist-designed</b> to nourish you naturally each day</li>
+            <button><a href="./planAndMenu.html">View The Meals</a></button>
+          </div>
+          <div class="bodypic">
+               <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/6213e94675502f98b72a400b_613a1c6e8438ae56112a5a08_PLANT-BASED_IMAGE_1.jpeg">
+          </div>
+      </div>
+      <div class="body2">
+          <div class="bodypic">
+              <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/6213e94675502f21292a400c_613a1d7f443acb81ffd20d85_Rectangle%252020%2520(1).jpeg" alt="">
+          </div>
+          <div class="bodytext">
+              <h4>A Better Alternative</h4>
+              <h2>No Meal Prep, No Compromises</h2>
+              <p>Leave the cooking to us—with chef-prepared selections and plant-forward ingredient swaps that make your meals easy + flavorful + nutritious: </p>
+                <li> <b>Gluten-free pastas</b> crafted from brown rice and lentils  </li>
+                <li> <b>Dairy-free “cheeze" sauce</b> of nutritional yeast, cashew butter, coconut milk, and butternut squash</li>
+                <li>And most importantly: <b>0 franken-foods</b> you can’t pronounce</li>
+              <button><a href="./planAndMenu.html">Explore Our Lineup</a></button>
+          </div>
+      </div>
+      <div class="body3">
+          <div class="bodytext">
+            <h4>Our Secret Sauce…</h4>
+            <h2>Pure Plant-Powered Protein</h2>
+            <p>Our plant-based meals are powerful—and the proof is in the protein. Each Purely Plant meal features at least 10g of plant protein to help keep you full and fuel you forward: </p>
+                <li><b>Whole-food sources of protein +</b> other whole-food ingredients made from veggies, legumes, nuts, seeds, and grains</li>
+                <li>Signature plant-protein blends—crafted from minimally processed,<b> clean sources of plant</b> protein</li>
+                <li><b>A smart fiber solution:</b> most Americans aren’t getting enough daily fiber, but adding just 1 plant-based meal is a simple way to increase your overall fiber intake</li>
+            <p><b>It’s easy to start small.</b> Add just one meal a day and prepare to unlock all the benefits of a plant-based diet. With Purely Plant, everyone can experience the plant-based goodness; our meals fit into most vegetarian and vegan diets and offer a satisfying mealtime solution for classic carnivores as well. </p>
+            <button><a href="./planAndMenu.html">Explore Our Lineup</a></button>
+          </div>
+          <div class="bodypic">
+              <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/6213e94675502fbae92a400d_613a1c77241bf123ae037713_PLANT-BASED_IMAGE_2.jpeg" alt="">
+          </div>
+      </div>
+ <!-- bottom -->
+      <div id="bottom1">
+          <h3>Vegetarians. Meat Eaters.
+            Omnivores. Flexitarians.</h3>
+            <p><b>Tasty Classics, New Favorites:</b> You don’t have to be all one thing or the other. With Purely Plant, you can enjoy all of our new, delicious plant-based meals alongside our traditional Freshly fan faves. Get the best vegetarian meals (and the best meals for meat eaters)—both delivered fresh to your door:</p>
+      </div>
+      <div id="bottom2">
+          <div><img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bc1b3af4027b353c094_production-meal-without-background-image-07b15228-eb98-48c9-a543-4587eb92a464.png" alt="">
+            <p><b>Unwrapped Salsa Verde Burrito</b></p>
+            <p><i>with Purely Plant Crumbles</i></p>
+          </div>
+          <div>
+              <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6c13fa4a1562aecc96d5_production-meal-without-background-image-df2f15dd-bea4-489b-ac1c-2a47717cf559.png" alt="">
+              <p><b>Indian-Spiced Chickpea Curry Bowl</b></p>
+              <p><i>with Basmati Rice, Lentils & Veggies</i></p>
+          </div>
+          <div>
+              <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bcd85b43c56c3a0ac72_production-meal-without-background-image-0db3c35d-80ac-4fff-9442-ace7d4c615c3.png" alt="">
+              <p><b>Middle Eastern Falafel</b></p>
+              <p><i>with Garlicky Tahini Sauce & Whole Grains</i></p>
+          </div>
+          <div>
+              <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bc4aa4db13a02441ba6_production-meal-without-background-image-7afd8ba9-2b97-4878-985b-f24ac594e8ff.png" alt="">
+              <p><b>Farmstead Baked Lentil Pasta</b></p>
+              <p><i>with Seasonal Veggies & Creamy Marinara</i></p>
+          </div>
+      </div>
+      <div id="bottomButton"><button><a href="./planAndMenu.html">See More Meals</a></button></div>
+</body>
+    <script>
+    </script>
+</html>
