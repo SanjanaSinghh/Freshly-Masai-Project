@@ -1,0 +1,95 @@
+body{
+    background-color: rgb(250, 242, 243);
+}
+.navbar{
+    height: 80px;
+    width: 135%;
+    display: flex;
+    background-color: white;
+}
+ #nav{
+    margin: 0;
+    justify-content: space-between;
+    display: flex;
+ } 
+ #nav p{
+    padding: 2px 16px;
+ } 
+ #nav a{
+    text-decoration:none;
+    color:black;
+    cursor: pointer;
+ }
+ #nav a:hover{
+     color: rgb(99, 99, 250);
+     text-decoration: underline;
+ }
+ #right a{
+    text-decoration:none;
+    color:black;
+    cursor: pointer;
+ }
+ #right a:hover{
+    color: rgb(99, 99, 250);
+    text-decoration: underline;
+ }
+#right{
+padding-left: 400px;
+    font-size: 25px;
+    display: flex;
+    cursor: pointer;
+}
+#right p{
+  padding: 2px 16px;
+}
+#body{
+height: 324px;
+width: 25%;
+margin-left: 35%;
+margin-top: 5%;
+padding-left: 3%;
+padding-top: 1%;
+
+border-color: rgb(92, 142, 142) 10px solid;
+border: none;
+}
+#body h1{
+    font-size: 45px;
+    margin: 0;
+    text-align: center;
+   
+}
+input{
+    height: 32px;
+    width: 550px;
+}
+#foot{
+    border-top: 1px solid gray; 
+    background-color: white;
+    height: 238px;
+    display: flex;
+}
+#sin,#Lmore,#jus{
+   padding-top: 30px;
+   margin-left: 160px;
+}
+#sin a{
+height: 20px; 
+width: 123px; 
+padding-left: 250px; 
+margin-top: 0;
+font-size: 20px;
+}
+#Lmore a{
+height: 20px; 
+width: 123px; 
+font-size: 20px; 
+}
+#jus img{
+    width: 30%;
+    height: 29px;
+    padding-left: 0;
+}
+#imag {
+   padding-right: 40px; 
+}

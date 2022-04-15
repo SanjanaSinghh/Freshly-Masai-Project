@@ -1,0 +1,46 @@
+body{
+    display: flex;
+}
+#sec{
+    padding-left: 258px;
+    margin-top: 90px;
+    font-size: 20px;
+    color: darkgreen;
+    text-align: center;
+}
+input{
+    height: 55px;
+    width: 350px;
+    border: 1px solid darkolivegreen;
+    border-radius: 40px;
+    margin: 20px;
+    font-size: 31px;
+    text-align: center;
+}
+#btn{
+    height: 50px;
+    width: 98px;
+    background-color: rgb(57, 126, 57);
+    color: white;
+    border: 1px solid darkolivegreen;
+    border-radius: 40px;
+    font-size: 18px
+}
+#id1{
+    display: flex;
+}
+#id2{
+    display: flex;
+}
+#id3{
+    display: flex;
+}
+.btn{
+    height: 65px;
+    width: 188px;
+    margin: 10px;
+    color: white;
+    border: 1px solid darkolivegreen;
+    border-radius: 40px;
+    font-size: 20px;
+}
