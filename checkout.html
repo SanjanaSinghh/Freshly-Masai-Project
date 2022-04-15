@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkout.css">
+    <title>checkout</title>
+</head>
+<body>
+    <div id="navbar">
+    <div style="height: 91px;width: 136px; margin: 10px 10px;">
+        <a href="home.html"><img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"></a>
+    </div>
+
+    <div id="top">
+        <p><a href="plans.html">Plans</a></p>
+        <p style="font-weight: bold;">></p>
+        <p><a href="day.html">Day</a></p>
+        <p style="font-weight: bold;">></p>
+        <p><a href="meals.html">Meals</a></p>
+        <p style="font-weight: bold;">></p>
+        <p style="font-weight: bold;">Checkout</p>
+    </div>
+
+    <div>
+        <a  style="font-size:20px;padding-left: 300px;text-decoration: underline;color: rgb(77, 77, 226);">Customer Support &#11206</a>
+    </div>
+    </div>
+
+
+    <div id="h3">
+<h1>Checkout</h1>
+<h1>Order Summary</h1>
+    </div>
+
+<!-- left form -->
+    <div id="tab">
+<form style="margin-left: 60px;margin-right: 30px;background-color: white;">
+    <div style="margin-left: 30px;">
+    <h2>Delivery Address</h2>
+    <div style="display: flex;font-weight: bold;"><p >First Name</p>
+    <p style="padding-left: 150px;">Last Name</p></div>
+    <div class="name">
+<input style="margin-right: 40px;height: 25px;width: 200px;" type="text">
+<input style="margin-right: 40px;height: 25px;width: 200px;" type="text">
+</div>
+<p style="font-weight: bold;">Full Name for Delivery Address</p>
+<input style=" height: 25px;width: 450px;" type="text">
+<p style="font-weight: bold;">Address Line 1</p>
+<input style=" height: 25px;width: 450px;" type="text">
+<p style="font-weight: bold;">Address Line 2 (optional)</p>
+<input style=" height: 25px;width: 450px;" type="text">
+<div style="display: flex;font-weight: bold;"><p >City</p>
+    <p style="padding-left: 150px;">State</p>
+<p style="padding-left: 150px;">Zip</p></div>
+<div class="name">
+    <input style="margin-right: 40px;height: 25px;width: 130px;" type="text">
+    <input style="margin-right: 40px;height: 25px;width: 120px;" type="text">
+    <input style="margin-right: 40px;height: 25px;width: 100px;" type="text">
+    </div>
+    <p style="font-weight: bold;">Phone</p>
+    <input style=" height: 25px;width: 450px;" type="number"><br>
+    <input type="checkbox" id="sms" name="sms" ><label for="sms">Receive SMS text message updates on my orders
+    </label>
+    <p style="font-weight: bold;">Email (We require your email to send you receipts and order updates)</p>
+    <input style=" height: 25px;width: 450px;" type="text">
+   <!-- <div style="display: flex;justify-content: space-between;"> <p style="font-weight: bold;">Total</p>
+    <p style="font-weight: bold;padding-right: 60px;">$69.93</p></div> -->
+</form>
+    <input id="next" type="button" onclick="sai()" value="Next">
+    <div id="paymentinfo">
+        <h3>
+            Payment info
+        </h3>
+        <label for="">  <input type="radio" >Paypal</label>
+        <br>
+        <label for="">  <input style="margin-bottom: 30px;" type="radio"checked >Card</label> <br>
+
+        <label for="" style="font-weight: bold;">Credit Card Number </label><br>
+        <input style="margin-bottom: 20px;" type="number" id="number" placeholder="1234 1234 1234 1234">
+        <br>
+        
+<label class="a" for="" style="font-weight: bold;">Expiration</label>  <label style="padding-left: 85px;" class="b" for="" style="font-weight: bolder;">CVC</label><br>
+<input type="month" name="" class="a" id="date">    <input type="number"placeholder="CVC" name=""  id="cvc">  
+<div style="display: flex;justify-content: space-between;"> <p style="font-weight: bold;font-size: 30px;">Total</p>
+    <p style="font-weight: bold;padding-right: 100px;font-size: 30px;">$69.93</p></div>
+<button id="b" onclick="sanju()">Submit Order</button>
+    </div>
+    <p> * By submitting this order, you agree to enroll in Freshly’s subscription service and to receive weekly
+        <br> deliveries. You will be notified each week to modify your subscription before your shipping cutoff. See
+        <br> details in <a style="text-decoration: underline;color: rgb(37, 37, 245);">Terms</a> and <a style="text-decoration: underline;color: rgb(37, 37, 245);">FAQs</a>.</p>
+</div>
+
+
+<!-- right form -->
+<form  style="margin-right: 70px;background-color: white;height: 514px;">
+<p style="text-decoration: underline;color: rgb(88, 88, 235);padding-left: 20px; font-size: 20px;">+Add Promo Code</p>
+<p style="text-decoration: underline;color: rgb(88, 88, 235);padding-left: 20px;font-size: 20px;">+ Redeem Gift Card</p>
+<p style="padding-left: 20px;font-size: 25px;">Delivery Date</p>
+<select name="date" id="date">
+    <option value="Tuesday, April 19">Tuesday, April 19</option>
+    <option value="Wednesday, April 20">Wednesday, April 20</option>
+    <option value="Thursday, April 21">Thursday, April 21</option>
+    <option value="Friday, April 22">Friday, April 22</option>
+    <option value="Saturday, April 23">Saturday, April 23</option>
+    <option value="Sunday, April 24">Sunday, April 24</option>
+    <option value="Monday, April 25">Monday, April 25</option>
+    <option value="Tuesday, April 26">Tuesday, April 26</option>
+    <option value="Wednesday, April 27">Wednesday, April 27</option>
+  </select>
+  <hr style="margin-left: 20px;margin-right: 20px;">
+  <div style="display: flex;justify-content: space-between;margin: 0 20px 0 20px;"><p style="color: rgb(102, 99, 99);">6 meals</p><p>$70.74</p></div>
+  <hr style="margin-left: 20px;margin-right: 20px;">
+  <div style="background:rgb(241, 238, 238);margin: 0 20px 0 20px;">
+      <div style="display: flex;margin-left: 10px;"><p>6 meals discount</p><p style="padding-left: 350px;color: rgb(8, 58, 8);">-$10.80</p></div>
+      <div style="display: flex;margin-left: 10px;font-weight: bold;"><p>Subtotal</p><p style="padding-left: 410px;font-weight: bold;">$59.94</p></div>
+    </div>
+    <div style="display: flex;"><p style="padding-left: 17px;">Shipping</p><p style="font-weight:bold;padding-left: 430px;">$9.99</p></div>
+    <hr style="margin-left: 20px;margin-right: 20px;">
+    <div style="display: flex;"><p style="padding-left: 17px;font-weight: bold;">Total</p><p style="font-weight:bold;padding-left: 450px;">$69.93</p></div>
+<p style="font-size: 30px;font-weight: bold;">My Meals</p>
+<div style="display: flex;"><p style="font-weight: bold;">x2</p><img style="width: 50px;height: 50px;margin:0 15px 0 15px;" src="https://res.cloudinary.com/freshly/image/upload/c_fill,dpr_2,f_auto,h_90,w_90/v1637012267/production-meal-without-background-image-6cadf26d-addc-4674-bfb3-3255cd770ebd.png">
+    <p style="font-weight: bold;">Homestyle Chicken</p></div>
+    <hr style="margin-right: 20px;">
+    <div style="display: flex;"><p style="font-weight: bold;">x1</p><img style="width: 50px;height: 50px;margin:0 15px 0 15px;" src="https://res.cloudinary.com/freshly/image/upload/c_fill,dpr_2,f_auto,h_90,w_90/v1637012875/production-meal-without-background-image-3c327134-2073-4b4a-9e97-a81597e5d689.png">
+        <p style="font-weight: bold;">Steak Peppercorn</p></div>
+        <hr style="margin-right: 20px;">
+        <div style="display: flex;"><p style="font-weight: bold;">x1</p><img style="width: 50px;height: 50px;margin:0 15px 0 15px;" src="https://res.cloudinary.com/freshly/image/upload/c_fill,dpr_2,f_auto,h_90,w_90/v1637012393/production-meal-without-background-image-4e5dd437-69eb-4ae8-847b-7ea52f687633.png">
+            <p style="font-weight: bold;">Sausage Baked Penne</p></div>
+            <hr style="margin-right: 20px;">
+            <div style="display: flex;"><p style="font-weight: bold;">x1</p><img style="width: 50px;height: 50px;margin:0 15px 0 15px;" src="https://res.cloudinary.com/freshly/image/upload/c_fill,dpr_2,f_auto,h_90,w_90/v1637012556/production-meal-without-background-image-964a7d18-a670-4e0d-8007-b50d22d07b79.png">
+                <p style="font-weight: bold;">Cauliflower Shell Beef Bolognese</p></div> 
+                <hr style="margin-right: 20px;">
+</form>
+</div>
+
+
+    <div id="footer">
+        <h2>Common Questions</h2>
+        <div class="sain">
+            <h1>How many servings are your meals?</h1><button id="c" style="padding-left: 600px;">𝘃</button>
+        </div>
+        <p id="show">The majority of our meals are single serving and meant to feed an average adult. We also offer
+            multi-serve proteins and sides, which are designed to feed multiple people for extra mealtime flexibility.
+            These delicious, ready-to-heat options can help you bulk up existing meals, simplify home cooking, or even
+            build an entire meal—the choice is yours!<br>
+            <br>Our 6-meal plan is perfect for a person looking for 6 dinners (or lunches!) a week. On average, our
+            meals weigh in at about 13 ounces and range from 300 to 650 calories. If you have a larger household, we do
+            offer a 12 meal per week subscription (it’s perfect for couples or a family of 4 looking for 3 meals per
+            week). Plus, you can always order multiple subscriptions.
+        </p>
+        <div class="sain">
+            <h1>Do you accommodate dietary preferences?</h1><button id="c1" style="padding-left: 550px;">𝘃</button>
+        </div>
+        <p id="show1">
+            We accommodate a variety of dietary preferences, including plenty of gluten-free, dairy-free, peanut-free, plant-based, low-calorie, and carb-conscious options. As a customer, you can set your own dietary preferences and easily find the meals that work for you. You can also check out individual ingredient lists for each dish if you have specific concerns, or contact us at support@freshly.com for help making selections. If you’re unable to place an order that fits your preferences now,
+             be sure to check back frequently as we’re always adding new and exciting dishes.
+        </p>
+        <div class="sain">
+            <h1>How long do the meals last?</h1><button id="c2" style="padding-left: 675px;">𝘃</button>
+        </div>
+        <p id="show2">
+            Our meals are chef prepared and delivered fresh, so typically they have a refrigerated shelf life of about 3-5 days. Select items (such as seafood) are best eaten first, so we’ll add a badge on the package to let you know. We usually suggest enjoying these meals within the first few days of receiving your order, but you can always check their exact use-by date on the back-of-pack nutrition label. If you’re ever unable to finish your meals within their shelf life, you can always pop them into the freezer for extended storage. Just be sure to microwave your meal straight from the freezer and add a few extra minutes 
+            to reach the 165° F internal temperature we recommend.
+        </p>
+        <div class="sain">
+            <h1>How do I heat up my meals?</h1><button id="c3" style="padding-left: 670px;">𝘃</button>
+        </div>
+        <p id="show3">
+            Your meals will come to you fully prepared so you just have to heat ‘em up in the microwave. On the back of each meal, you’ll find our easy steps for heating, but generally, the meals heat up in about 3 minutes (depending on your microwave). If you’re unsure, start at 2 minutes and heat in 30–second increments until the meal reaches an inner temperature of 165° F. Our meals are packaged to be heated in the microwave (for the ultimate convenience), but you can heat them in the oven if you’d like. Just so you know, our current meal containers aren’t safe for the oven or stovetop, so you’ll have to transfer 
+            your food to heat it up. You can check out the full oven reheat directions in our FAQ.
+        </p>
+        <div class="sain">
+            <h1>How does shipping work?</h1><button id="c4" style="padding-left: 695px;">𝘃</button>
+        </div>
+        <p id="show4">
+            To help guarantee your meals arrive in the freshest condition, there is a small shipping fee associated with your order. We deliver to all states within the continental U.S., and our shipping partners offer delivery every day of the week. The exact days that we can reach you will depend on your ZIP code and the carrier delivering your Freshly meals. Whether you're signing up or updating your typical delivery day, we'll 
+            show you all the days available to you so you can choose what's best for you.
+        </p>
+        <div class="sain">
+            <h1>How does the subscription work?</h1><button id="c5" style="padding-left: 635px;">𝘃</button>
+        </div>
+        <p id="show5">
+            Every week you get to pick your selection of meals from our weekly rotation. Our meals cost as low as $8.99/meal, and come in five plan sizes: 4, 6, 8, 10, or 12 meals per week. Once you select your plan, you'll pick the most convenient delivery day for you, and we'll ship your chef-cooked meals right to your doorstep! If you ever need to skip or cancel a week, 
+            it's easy to make changes to your upcoming delivery before the weekly deadline.
+        </p>
+    </div>
+    </div>
+    <script src="checkout.js">
+    </script>
+</body>
+</html>
