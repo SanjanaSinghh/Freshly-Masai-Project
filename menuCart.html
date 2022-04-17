@@ -8,16 +8,19 @@
     <style>
          /* navBar */
       #outerDiv{
-          height: 30px;
+          height: 70px;
           display:grid;
-          grid-template-columns: 1fr 4fr 1fr;
+          grid-template-columns: 2fr 3fr 1fr;
       }
       #outerDiv>div{
           display: flex;
           justify-content: space-evenly;
-          font-size: 10px;
+          font-size:12px;
           padding: 2%;
           
+      }
+      #innerDiv1>h2{
+          font-size: 30px;
       }
       #innerDiv1>a>img{
           height: 10px;
@@ -28,10 +31,12 @@
           border: 1px solid black;
       }
       #innerDiv3>div{
+          font-size: 19px;
+          font-weight: bold;
           padding: 5%;
       }
       #innerDiv2>div{
-          font-size: 7px;
+          font-size: 20px;
           font-family: sans-serif;
           color: #333333;
           font-weight: bold;
@@ -44,11 +49,13 @@
         #main{
             display: grid;
             grid-template-columns: 3fr 1fr;
+            height: auto;
         }
          /* menu body */
          #menuBox{
             display: grid;
             grid-template-columns: repeat(4,1fr);
+            height: auto;
             gap: 10px;
             margin-left: 20px;
             margin-right: 20px;
@@ -63,14 +70,15 @@
           border-radius: 5px;
       }
       #menuBox>div>p{
-          font-size: 8px;
           font-family: sans-serif;
       }
       #p1{
+          font-size: 14px;
          font-weight: bold;
          color: #333333;
       }
       #p2{
+          font-size: 10px;
           color: #357471;
       }
       #bottomDiv{
@@ -85,6 +93,7 @@
           border: none;
           color: white;
           border-radius: 50%;
+          width: 30px;
       }
       /* cart body */
       #top>div>img{
@@ -92,30 +101,32 @@
           width: 50%;
       }
       #top>div>p{
-          font-size: 10px;
+          font-size: 18px;
           font-weight: bold;
       }
       #top>div>button{
           background-color: #2a6dff;
           border-radius: 60%;
-          font-size: medium;
-          font-weight: bolder;
+          font-size: 30px;
+          font-weight: bold;
           border: none;
           color: white;
       }
       #bottom{
           margin-left: 10px;
-          font-size: 10px;
+          font-size: 18px;
           font-family: sans-serif;
           font-weight: bold;
       }
       #nextButt{
           background-color: #2a6dff;
           color: white;
-          font-size: medium;
+          height: 50px;
+          font-size: 30px;
           width: 90%;
-          margin-left: 10px;
+          margin-left: 20px;
           border: none;
+          text-decoration: none;
       }
     </style>
 </head>
@@ -123,6 +134,7 @@
      <!-- navBar -->
    <div id="outerDiv">
     <div id="innerDiv1">
+        <h2><a href="day.html"><-back</a></h2>
         <h2>Choose Meals</h2>
     </div>
     <div id="innerDiv2">
@@ -133,7 +145,7 @@
         <div></div>
     </div>
     <div id="innerDiv3">
-        <div>my Delivery for:</div>
+        <div>my Delivery</div>
         <button id="clearAll">clear all</button>
     </div>
   </div>
@@ -145,11 +157,12 @@
 <!-- cart body -->
     <div id="cartBox">
         <div id="top"></div>
+        <hr>
         <div id="bottom">
             <p>Order Summary</p>
             
         </div>
-        <button id="nextButt">Next</button>
+        <a href="checkout.html"><button id="nextButt">Next</button></a>
     </div>
     
     </div>
