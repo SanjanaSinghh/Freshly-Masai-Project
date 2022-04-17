@@ -51,7 +51,7 @@
             grid-template-columns: 3fr 1fr;
             height: auto;
         }
-         /* menu body */
+         /* */
          #menuBox{
             display: grid;
             grid-template-columns: repeat(4,1fr);
@@ -95,7 +95,7 @@
           border-radius: 50%;
           width: 30px;
       }
-      /* cart body */
+      /*  */
       #top>div>img{
           height: 50%;
           width: 50%;
@@ -149,12 +149,12 @@
         <button id="clearAll">clear all</button>
     </div>
   </div>
-<!-- main body-->
+
     <div id="main">
-<!-- menu body -->
+<!-- -->
     <div id="menuBox">
     </div>
-<!-- cart body -->
+<!--  -->
     <div id="cartBox">
         <div id="top"></div>
         <hr>
@@ -168,429 +168,448 @@
     </div>
 </body>
 <script>
-    // menu body
+    
     var menuData=[
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61063fef3319dbcfa7088dc3_production-meal-image-29fee2e7-8e88-4cd3-aad9-0e7d25671f7f.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61063fef3319dbcfa7088dc3_production-meal-image-29fee2e7-8e88-4cd3-aad9-0e7d25671f7f.jpeg",
         dish:"Steak Peppercorn",
         cal:"500Cal | Gluten Free |Single-Serve",
         price:1.22,
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6b8686c6708c070e7d41_production-meal-image-e4122aa8-0fe7-4854-b6f5-e27e0c5be918.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6b8686c6708c070e7d41_production-meal-image-e4122aa8-0fe7-4854-b6f5-e27e0c5be918.jpeg",
         dish:"Homestyle Chicken",
         cal:"560Cal | Gluten Free |Single-Serve",
         price:0.99,
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6b89b735739065897a4f_production-meal-image-c9eef45a-97a9-487c-9550-71488e5f639a.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6b89b735739065897a4f_production-meal-image-c9eef45a-97a9-487c-9550-71488e5f639a.jpeg",
         dish:"Cauliflower Shell Beef Bolognese",
         cal:"490Cal | Gluten Free |Single-Serve",
         price:0.99,
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6b8bdf3b65081fd159c6_production-meal-image-f0de55be-d691-4ade-bc26-b4a8aedaa1fe.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6b8bdf3b65081fd159c6_production-meal-image-f0de55be-d691-4ade-bc26-b4a8aedaa1fe.jpeg",
         dish:"Sausage Baked Penne",
         cal:"470Cal | Gluten Free |Single-Serve",
         price:0.99,
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6b8e6dd23b60cb122654_production-meal-image-92ec0fc1-d352-4720-9b83-96798ab8d2de.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6b8e6dd23b60cb122654_production-meal-image-92ec0fc1-d352-4720-9b83-96798ab8d2de.jpeg",
         dish:"Savory-Sweet Chicken Teriyaki Bowl",
         cal:"480Cal | Gluten Free |Single-Serve",
         price:0.99
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/610640046931cb5d54bd5472_production-meal-image-7a62bb89-9bcb-4f1f-9f0f-d8372698d48e.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/610640046931cb5d54bd5472_production-meal-image-7a62bb89-9bcb-4f1f-9f0f-d8372698d48e.jpeg",
         dish:"Protein-Packed Chicken Parm",
         cal:"410Cal | Gluten Free |Single-Serve",
         price:1.22
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6b94f03e50f2e0d2b7f3_production-meal-image-bc1b24c8-f62a-4756-a40e-173a8b67a590.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6b94f03e50f2e0d2b7f3_production-meal-image-bc1b24c8-f62a-4756-a40e-173a8b67a590.jpeg",
         dish:"Golden Oven-Fried Chicken & Mash",
         cal:"510Cal | Gluten Free |Single-Serve",
         price:1.22
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6b9a85b43c3383a0a3b3_production-meal-image-ef64cbd3-cc91-4c5f-9865-b9ff0442572e.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6b9a85b43c3383a0a3b3_production-meal-image-ef64cbd3-cc91-4c5f-9865-b9ff0442572e.jpeg",
         dish:"Zingy Buffalo Chicken",
         cal:"470Cal | Gluten Free |Single-Serve",
         price:1.22
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/6106401a005f9f6781262949_production-meal-image-17ade4a4-7351-4ff8-95c6-765d70e5ea5d.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/6106401a005f9f6781262949_production-meal-image-17ade4a4-7351-4ff8-95c6-765d70e5ea5d.jpeg",
         dish:"White Bean Turkey Chili Bowl",
         cal:"540Cal | Gluten Free |Single-Serve",
         price:1.22
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6ba186c67063830ea67a_production-meal-image-7bfd44a5-38ec-4893-a0ff-d93693b1deb9.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6ba186c67063830ea67a_production-meal-image-7bfd44a5-38ec-4893-a0ff-d93693b1deb9.jpeg",
         dish:"Pork Carnitas",
         cal:"480Cal | Gluten Free |Single-Serve",
         price:0.99
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6ba5f589fe69d6562dee_production-meal-image-a4feff11-ec91-43e8-bab5-e6daf8b55eea.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6ba5f589fe69d6562dee_production-meal-image-a4feff11-ec91-43e8-bab5-e6daf8b55eea.jpeg",
         dish:"Sesame-Ginger Chicken & Noodles",
         cal:"430Cal | Gluten Free |Single-Serve",
         price:0.99
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6ba8406d133a498de788_production-meal-image-e184440d-cfea-4806-b7e3-1e5856975959.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6ba8406d133a498de788_production-meal-image-e184440d-cfea-4806-b7e3-1e5856975959.jpeg",
         dish:"Sautéed French Green Beans (11 oz)",
         cal:"140Cal | Gluten Free |Single-Serve",
         price:0.99
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bb12037c27177184b97_production-meal-image-fa07e0dc-cb7f-43d7-a669-d35dc3fbcf93.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bb12037c27177184b97_production-meal-image-fa07e0dc-cb7f-43d7-a669-d35dc3fbcf93.jpeg",
         dish:"Chicken Tikka Masala",
         cal:"570Cal | Gluten Free |Single-Serve",
         price:0.99
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/610640562b4a8d4304d8cd7f_production-meal-image-736d13f8-813c-47a9-91e3-e11eecfeb4ef.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/610640562b4a8d4304d8cd7f_production-meal-image-736d13f8-813c-47a9-91e3-e11eecfeb4ef.jpeg",
         dish:"Masterful Mash (16 oz)",
         cal:"160Cal | Gluten Free |Single-Serve",
         price:1.22
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/610640534648a3861409719e_production-meal-image-a06ce51f-74b3-429e-8ff1-ada01979e783.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/610640534648a3861409719e_production-meal-image-a06ce51f-74b3-429e-8ff1-ada01979e783.jpeg",
         dish:"Masterful Mac & Cheese (15 oz)",
         cal:"470Cal | Gluten Free |Single-Serve",
         price:1.22
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/6106404a9ca1f30fe0fbb9a9_production-meal-image-50d04c03-029a-4039-ab75-8aecefbdcf43.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/6106404a9ca1f30fe0fbb9a9_production-meal-image-50d04c03-029a-4039-ab75-8aecefbdcf43.jpeg",
         dish:"3 Grilled Chicken Breasts (9.75 oz)",
         cal:"160Cal | Gluten Free |Single-Serve",
         price:1.22
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61064050a510183577a6c7f7_production-meal-image-ea98e43b-5663-49f6-9c00-8f2b23225bd2.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61064050a510183577a6c7f7_production-meal-image-ea98e43b-5663-49f6-9c00-8f2b23225bd2.jpeg",
         dish:"8 Baked Turkey Meatballs (9.98 oz)",
         cal:"110Cal | Gluten Free |Single-Serve",
         price:1.12
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bc1b3af4007be53c093_production-meal-image-51fe566d-7bc5-4500-91b0-622d6c2e665c.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bc1b3af4007be53c093_production-meal-image-51fe566d-7bc5-4500-91b0-622d6c2e665c.jpeg",
         dish:"Unwrapped Salsa Verde Burrito",
         cal:"400Cal | Gluten Free |Single-Serve",
         price:1.12
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bc4aa4db184af441ba7_production-meal-image-b845ba48-1300-4ecb-b9d0-d545b084f15a.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bc4aa4db184af441ba7_production-meal-image-b845ba48-1300-4ecb-b9d0-d545b084f15a.jpeg",
         dish:"Farmstead Baked Lentil Pasta",
         cal:"500Cal | Gluten Free |Single-Serve",
         price:1.12
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bc75803c5766db77d82_production-meal-image-63479068-f450-4424-a206-229bd42ab321.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bc75803c5766db77d82_production-meal-image-63479068-f450-4424-a206-229bd42ab321.jpeg",
         dish:"Asian-Style Chicken & Noodles",
         cal:"400Cal | Gluten Free |Single-Serve",
         price:1.12
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/62493fb75aaedf6204ed0ce6_production-meal-image-65b4c30a-d728-4370-bea5-7378fde418ce.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/62493fb75aaedf6204ed0ce6_production-meal-image-65b4c30a-d728-4370-bea5-7378fde418ce.jpeg",
         dish:"Chicken Alla No Vodka",
         cal:"520Cal | Gluten Free |Single-Serve",
         price:0.99
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/62493fbaff65bb2e2e914365_production-meal-image-938266c6-577c-425f-ae6f-b95ef5864266.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/62493fbaff65bb2e2e914365_production-meal-image-938266c6-577c-425f-ae6f-b95ef5864266.jpeg",
         dish:"Wild-Caught Fish Cake",
         cal:"570Cal | Gluten Free |Single-Serve",
         price:0.99
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/62493fbc3ce683084de72217_production-meal-image-0287e25c-7e2a-47fd-acef-ebaff360e858.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/62493fbc3ce683084de72217_production-meal-image-0287e25c-7e2a-47fd-acef-ebaff360e858.jpeg",
         dish:"Bistro French Onion Chicken",
         cal:"630Cal | Gluten Free |Single-Serve",
         price:0.99
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/62493fbffc04049c406fdf58_production-meal-image-aecde057-5044-40d0-858b-7c27f4e9d304.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/62493fbffc04049c406fdf58_production-meal-image-aecde057-5044-40d0-858b-7c27f4e9d304.jpeg",
         dish:"Turkey Meatballs",
         cal:"410Cal | Gluten Free |Single-Serve",
         price:1.22
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bf10a8aa972b7670255_production-meal-image-8f27cccd-b0db-405a-9341-3f4adabcbe9c.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bf10a8aa972b7670255_production-meal-image-8f27cccd-b0db-405a-9341-3f4adabcbe9c.jpeg",
         dish:"Chicken Cordon Bleu",
         cal:"710Cal | Gluten Free |Single-Serve",
         price:1.22
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/62493fc52ea22405a0b1de3e_production-meal-image-15a9c363-f1e7-46a4-aa51-ba813287556a.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/62493fc52ea22405a0b1de3e_production-meal-image-15a9c363-f1e7-46a4-aa51-ba813287556a.jpeg",
         dish:"Chicken & Spring Pea Risotto",
         cal:"590Cal | Gluten Free |Single-Serve",
         price:1.22
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/62493fc8f3b0ac2abdf31786_production-meal-image-25f9ce2d-ca21-499e-a140-8d59b4733ec2.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/62493fc8f3b0ac2abdf31786_production-meal-image-25f9ce2d-ca21-499e-a140-8d59b4733ec2.jpeg",
         dish:"Flame-Seared Top Blade Steak",
         cal:"610Cal | Gluten Free |Single-Serve",
         price:1.22
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/62493fcaff65bb434f914d40_production-meal-image-fc61a508-7383-432b-bd40-4d7f75abe43a.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/62493fcaff65bb434f914d40_production-meal-image-fc61a508-7383-432b-bd40-4d7f75abe43a.jpeg",
         dish:"Moroccan-Spiced Harissa Chicken",
         cal:"520Cal | Gluten Free |Single-Serve",
         price:0.99
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/62493fcdbba8200208f4d2d5_production-meal-image-3f7f6a1a-3170-4958-9328-a23ce4e4e1e5.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/62493fcdbba8200208f4d2d5_production-meal-image-3f7f6a1a-3170-4958-9328-a23ce4e4e1e5.jpeg",
         dish:"Japanese-Style Pork Katsu",
         cal:"630Cal | Gluten Free |Single-Serve",
         price:0.99
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/62493fd08df6153570d2b250_production-meal-image-a2510b77-b311-455c-883d-1b27f623d545.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/62493fd08df6153570d2b250_production-meal-image-a2510b77-b311-455c-883d-1b27f623d545.jpeg",
         dish:"Cheesy Vegetable Gratin",
         cal:"420Cal | Gluten Free |Single-Serve",
         price:0.99
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/62493fd38df615205dd2b30b_production-meal-image-4369a06e-ee7b-4398-91bc-20716ab0c25f.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/62493fd38df615205dd2b30b_production-meal-image-4369a06e-ee7b-4398-91bc-20716ab0c25f.jpeg",
         dish:"Grilled Chicken Piccata",
         cal:"360Cal | Gluten Free |Single-Serve",
         price:0.99
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/62493fd55776d68528bafa16_production-meal-image-e0b329cb-d56e-41f8-994b-752dee7fd6e3.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/62493fd55776d68528bafa16_production-meal-image-e0b329cb-d56e-41f8-994b-752dee7fd6e3.jpeg",
         dish:"Lowcountry BBQ Chicken",
         cal:"410Cal | Gluten Free |Single-Serve",
         price:0.99
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/62493fd901ec713462cb6a08_production-meal-image-2510ecf4-704d-49f8-abc4-d63c74a28eda.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/62493fd901ec713462cb6a08_production-meal-image-2510ecf4-704d-49f8-abc4-d63c74a28eda.jpeg",
         dish:"Pesto Cauliflower Shells & Sausage",
         cal:"590Cal | Gluten Free |Single-Serve",
         price:1.12
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61064033d2877aaa317edab7_production-meal-image-f28dfb4e-efc8-4dff-b95c-9239797edcb0.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61064033d2877aaa317edab7_production-meal-image-f28dfb4e-efc8-4dff-b95c-9239797edcb0.jpeg",
         dish:"Shrimp & Andouille Paella",
         cal:"530Cal | Gluten Free |Single-Serve",
         price:1.12
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bde0c617f531e552730_production-meal-image-933355a9-e575-456c-9961-d6ac01cb50da.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bde0c617f531e552730_production-meal-image-933355a9-e575-456c-9961-d6ac01cb50da.jpeg",
         dish:"Oven-Baked Sweet Potato Cakes",
         cal:"430Cal | Gluten Free |Single-Serve",
         price:1.12
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/62493fe28df6152f59d2b65b_production-meal-image-ff2c65b9-af43-4b4f-af72-835f41bc4a2b.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/62493fe28df6152f59d2b65b_production-meal-image-ff2c65b9-af43-4b4f-af72-835f41bc4a2b.jpeg",
         dish:"Hearty Veggie Bolognese",
         cal:"470Cal | Gluten Free |Single-Serve",
         price:1.22
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6be2ee61ff2719dff7cd_production-meal-image-0a3b0cc8-11c7-4dd7-9b62-21a8a91c6a07.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6be2ee61ff2719dff7cd_production-meal-image-0a3b0cc8-11c7-4dd7-9b62-21a8a91c6a07.jpeg",
         dish:"Three-Grain Harvest Bowl",
         cal:"420Cal | Gluten Free |Single-Serve",
         price:1.22
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bfaee61ff381ae00518_production-meal-image-4aa973ed-846f-4957-9341-272c1125725d.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bfaee61ff381ae00518_production-meal-image-4aa973ed-846f-4957-9341-272c1125725d.jpeg",
         dish:"Very Verde Chicken",
         cal:"470Cal | Gluten Free |Single-Serve",
         price:1.22
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bee549a61ddbce0691d_production-meal-image-603e4274-71b0-48a1-8072-c11baab58220.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bee549a61ddbce0691d_production-meal-image-603e4274-71b0-48a1-8072-c11baab58220.jpeg",
         dish:"Chipotle Chicken Bowl",
         cal:"240Cal | Gluten Free |Single-Serve",
         price:1.12
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6c19df3b6557b5d15ae8_production-meal-image-1ae8822e-987c-4a7e-8961-557d69673c01.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6c19df3b6557b5d15ae8_production-meal-image-1ae8822e-987c-4a7e-8961-557d69673c01.jpeg",
         dish:"Tricolor Beef Lasagna",
         cal:"650Cal | Gluten Free |Single-Serve",
         price:1.12
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6c1c549a617576e07d76_production-meal-image-353ecb3a-15e4-465e-bb69-4b91e4c6b004.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6c1c549a617576e07d76_production-meal-image-353ecb3a-15e4-465e-bb69-4b91e4c6b004.jpeg",
         dish:"Traditional Beef Stew",
         cal:"260Cal | Gluten Free |Single-Serve",
         price:1.12
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6c13fa4a152d43cc96d6_production-meal-image-fa4ff532-e487-4656-b98f-f489d59e73b6.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6c13fa4a152d43cc96d6_production-meal-image-fa4ff532-e487-4656-b98f-f489d59e73b6.jpeg",
         dish:"Indian-Spiced Chickpea Curry Bowl",
         cal:"360Cal | Gluten Free |Single-Serve",
         price:0.98
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6be4ee61ff706bdff870_production-meal-image-9e969581-d09c-4617-9b17-d455d23c8952.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6be4ee61ff706bdff870_production-meal-image-9e969581-d09c-4617-9b17-d455d23c8952.jpeg",
         dish:"BBQ Bison Burger*",
         cal:"600Cal | Gluten Free |Single-Serve",
         price:0.98
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6c064b4b238487a0b2b0_production-meal-image-2e64815b-800d-4a38-9664-c7a524148b2f.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6c064b4b238487a0b2b0_production-meal-image-2e64815b-800d-4a38-9664-c7a524148b2f.jpeg",
         dish:"Jerk Chicken Bowl",
         cal:"380Cal | Gluten Free |Single-Serve",
         price:0.99
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6c0f6dd23b0f8012af30_production-meal-image-93be0073-891b-4443-a6a0-9ab21a1d309c.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6c0f6dd23b0f8012af30_production-meal-image-93be0073-891b-4443-a6a0-9ab21a1d309c.jpeg",
         dish:"Sticky-Sweet BBQ Beef Bowl",
         cal:"390Cal | Gluten Free |Single-Serve",
         price:0.99
        },{
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bd74b4b23e889a06f18_production-meal-image-7448fb51-c1f4-4ac8-ad5b-1406fc1bfcfd.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bd74b4b23e889a06f18_production-meal-image-7448fb51-c1f4-4ac8-ad5b-1406fc1bfcfd.jpeg",
         dish:"Huli Huli Chicken",
         cal:"460Cal | Gluten Free |Single-Serve",
         price:0.99
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/624940018df615a86dd2bc6b_production-meal-image-d779e243-ce99-4811-9150-bb3a6964f682.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/624940018df615a86dd2bc6b_production-meal-image-d779e243-ce99-4811-9150-bb3a6964f682.jpeg",
         dish:"Salsa Fresca Chicken",
         cal:"430Cal | Gluten Free |Single-Serve",
         price:0.99
        },
 
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6c0a2037c265ce187aed_production-meal-image-2f53a0bb-c83f-48f7-b920-53e9157ac5e1.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6c0a2037c265ce187aed_production-meal-image-2f53a0bb-c83f-48f7-b920-53e9157ac5e1.jpeg",
         dish:"Super-Grain Pulled Pork Bowl",
         cal:"400Cal | Gluten Free |Single-Serve",
         price:1.22
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bcd85b43c0274a0ac73_production-meal-image-197e49d6-cfcc-4a4b-b0ea-4854553694de.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bcd85b43c0274a0ac73_production-meal-image-197e49d6-cfcc-4a4b-b0ea-4854553694de.jpeg",
         dish:"Middle Eastern Falafel",
         cal:"470Cal | Gluten Free |Single-Serve",
         price:1.22
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bfdfa4a1561bccc8cb2_production-meal-image-6dcb7ec8-8907-481c-b9d1-4bb54a42a89c.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bfdfa4a1561bccc8cb2_production-meal-image-6dcb7ec8-8907-481c-b9d1-4bb54a42a89c.jpeg",
         dish:"K-Town Pork & Purple Sticky Rice",
         cal:"590Cal | Gluten Free |Single-Serve",
         price:1.22
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bd0df3b6577c7d15aa4_production-meal-image-c92760b3-d1c8-463a-9721-8effc5cbc614.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bd0df3b6577c7d15aa4_production-meal-image-c92760b3-d1c8-463a-9721-8effc5cbc614.jpeg",
         dish:"Miso-Glazed Beef Bowl",
         cal:"330Cal | Gluten Free |Single-Serve",
         price:1.22
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bda86c670c07a0efcd2_production-meal-image-86d5fe9a-e01f-4af5-b246-e68d2eb8aebb.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bda86c670c07a0efcd2_production-meal-image-86d5fe9a-e01f-4af5-b246-e68d2eb8aebb.jpeg",
         dish:"Purely Plant Shepherd’s Pie",
         cal:"410Cal | Gluten Free |Single-Serve",
         price:1.22
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/6249401259667bf6892bf2d2_production-meal-image-a181a354-9004-4837-aaef-2bd21f302cd2.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/6249401259667bf6892bf2d2_production-meal-image-a181a354-9004-4837-aaef-2bd21f302cd2.jpeg",
         dish:"Baja Green-Chile Chicken Stew",
         cal:"470Cal | Gluten Free |Single-Serve",
         price:1.22
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bf7fa4a155c27cc8b88_production-meal-image-207ee5a9-50b6-4d3f-a0bb-e31354d0e606.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/61ff6bf7fa4a155c27cc8b88_production-meal-image-207ee5a9-50b6-4d3f-a0bb-e31354d0e606.jpeg",
         dish:"Creamy Mushroom Risotto",
         cal:"460Cal | Gluten Free |Single-Serve",
         price:1.24
        },
        {
-        image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/6249401959667b76902bf64b_production-meal-image-62334c4d-66da-4308-98f3-568dca0d56ac.jpeg",
+        image:"https:assets-global.website-files.com/5d03b4e13011831ae4624b37/6249401959667b76902bf64b_production-meal-image-62334c4d-66da-4308-98f3-568dca0d56ac.jpeg",
         dish:"Springtime Chicken Florentine",
         cal:"480Cal | Gluten Free |Single-Serve",
         price:1.24
        }
    ]
-   var cartData; 
-    if(localStorage.getItem('cartData')==null){
-        cartData=[];
-     }else{
-        cartData= JSON.parse(localStorage.getItem("cartData"))
-     }
+   var cartData=[]
+     var deen=cartData
+     
      menuData.forEach(function(menuItem){
-        var box = document.createElement("div");
+         var box = document.createElement("div");
+         
+         
+         
+         var img= document.createElement("img");
+         
+         img.src=menuItem.image;
+         var dishName=document.createElement("p");
+         
+         dishName.innerText=menuItem.dish;
+         dishName.id="p1";
+         
+         
+         var div=document.createElement("div");
+         
+         div.id="bottomDiv"
+         var cal=document.createElement("p");
+         
+         cal.innerText=menuItem.cal;
+         cal.id="p2"
+         var cartButton=document.createElement("button");
+         
+         cartButton.innerText="+";
+          console.log(cartData)
+         cartButton.addEventListener("click" , function(){
+             console.log(cartData)
+             
+             console.log("press")
+             cartData.push(menuItem);
+             console.log(cartData);
+             localStorage.setItem("cartData",JSON.stringify(cartData))
+             alert("Added !")
+             window.location.reload();
+            });
+            
+            div.append(dishName,cartButton)
+            box.append(img,div,cal);
+            document.querySelector("#menuBox").append(box);
+        });
+        console.log(cartData)
         
+       
+             var showTotal=document.createElement("div");
+        
+             cartData=JSON.parse(localStorage.getItem("cartData"))
+             console.log(cartData)
+             var totalPrice= cartData.reduce(function(sum,ele,index,arr){
+    
+             return sum+ + Number(ele.price);
+         }, 9.99);
+    
+         var cartLength=cartData.length;
+         console.log(cartData,totalPrice)
+    
+         cartData.forEach((cartItem, cartIndex) => {
+               var box1=document.createElement("div");
+                box1.id="box1";
+                var box2=document.createElement("div");
+                box2.id="box2";
+        
+        
+        
+               var img=document.createElement("img");
+               img.src=cartItem.image;
+        
+        
+       var productName=document.createElement("p");
+       productName.innerText=cartItem.dish;
 
-        var img= document.createElement("img");
-        img.src=menuItem.image;
-        var dishName=document.createElement("p");
-        dishName.innerText=menuItem.dish;
-        dishName.id="p1";
+       var price=document.createElement("p")
+       price.innerText=cartItem.price;
 
-        var div=document.createElement("div");
-        div.id="bottomDiv"
-        var cal=document.createElement("p");
-        cal.innerText=menuItem.cal;
-        cal.id="p2"
-        var cartButton=document.createElement("button");
-        cartButton.innerText="+";
-        cartButton.addEventListener("click" , function(){
-        cartData.push(menuItem);
-        console.log(cartData);
-        localStorage.setItem("cartData",JSON.stringify(cartData))
-        window.location.reload();
-      });
-       div.append(dishName,cartButton)
-        box.append(img,div,cal);
-        document.querySelector("#menuBox").append(box);
-    });
-
-    // cart box
-    var showTotal=document.createElement("div");
-    cartData=JSON.parse(localStorage.getItem("cartData"))
-    var totalPrice= cartData.reduce(function(sum,ele,index,arr){
-        return sum+ + Number(ele.price);
-    }, 9.99);
-    var cartLength=cartData.length;
-    console.log(cartData,totalPrice)
-    cartData.forEach((cartItem, cartIndex) => {
-      var box1=document.createElement("div");
-       box1.id="box1";
-       var box2=document.createElement("div");
-       box2.id="box2";
-
-      var img=document.createElement("img");
-      img.src=cartItem.image;
-
-      var productName=document.createElement("p");
-      productName.innerText=cartItem.dish;
-
-      var price=document.createElement("p")
-      price.innerText=cartItem.price;
-
-      var cartButton=document.createElement("button");
-      cartButton.innerText="-";
+       var cartButton=document.createElement("button");
+       cartButton.innerText="-";
       
-      cartButton.addEventListener("click" , function(){
-       cartData.splice(cartIndex,1)
-       localStorage.setItem("cartData" , JSON.stringify(cartData))
-       window.location.reload();
-      });
-      document.querySelector("#clearAll").addEventListener("click" , function(){
-       cartData.splice(cartIndex,cartData.length)
-       localStorage.setItem("cartData" , JSON.stringify(cartData))
-       window.location.reload();
-      });
+       cartButton.addEventListener("click" , function(){
+        cartData.splice(cartIndex,1)
+        localStorage.setItem("cartData" , JSON.stringify(cartData))
+        window.location.reload();
+       });
+       document.querySelector("#clearAll").addEventListener("click" , function(){
+        cartData.splice(cartIndex,cartData.length)
+        localStorage.setItem("cartData" , JSON.stringify(cartData))
+        window.location.reload();
+       });
 
-      box1.append(img,productName);
-      box2.append(cartButton);
-      document.querySelector("#top").append(box1,box2);
-  });
-  if(cartData.length==0){
-    var items=document.createElement("p");
-    var total=document.createElement("p");
-      items.innerText=cartData.length+" meal";
-      total.innerText="subtotal = $0"
-      document.querySelector("#bottom").append(items,total);
+       box1.append(img,productName);
+       box2.append(cartButton);
+       document.querySelector("#top").append(box1,box2);
+   });
+   if(cartData.length==0){
+     var items=document.createElement("p");
+     var total=document.createElement("p");
+       items.innerText=cartData.length+" meal";
+       total.innerText="subtotal = $0"
+       document.querySelector("#bottom").append(items,total);
 
-  }
-  else{
-    var items=document.createElement("p");
-  var total=document.createElement("p")
-      items.innerText=cartData.length+" meal"
-      total.innerText="subtotal = $"+totalPrice.toFixed(2);
-      document.querySelector("#bottom").append(items,total)
-  }
+   }
+   else{
+     var items=document.createElement("p");
+   var total=document.createElement("p")
+       items.innerText=cartData.length+" meal"
+       total.innerText="subtotal = $"+totalPrice.toFixed(2);
+       document.querySelector("#bottom").append(items,total)
+   }
   
 
       
