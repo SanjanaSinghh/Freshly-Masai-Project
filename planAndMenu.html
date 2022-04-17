@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meal delivery Service </title>
     <style>
 
  /* navBar */
@@ -73,7 +73,7 @@
 }
       /* body top */
       #top1{
-         margin-top: 30px;
+         margin-top: 38px;
          text-align: center;
          width: 50%;
          margin: auto;
@@ -96,9 +96,9 @@
       #top2{
           height: auto;
           margin-top: 40px;
-          display: flex;
+          display: grid;
           grid-template-columns: repeat(5,1fr);
-          justify-content:space-around;
+          gap: 20px;
       }
       #top2>div>img{
           height: 200px;
@@ -127,14 +127,15 @@
           color: white;
           text-decoration: none;
       }
-       /* body */
-       #body{
+
+      /* body */
+      #body{
           text-align: center;
           width: 50%;
           margin: auto;
           font-family: sans-serif;
           margin-top: 50px;
-          font-size: 6.8px;
+          font-size: 14px;
          font-family: sans-serif;
          color: #333333;
       }
@@ -149,11 +150,12 @@
           font-size: 40px
       }
       #body>select{
-          font-size: 7px;
+          font-size: 14px;
       }
 
-        /* menu body */
-         #menuBox{
+
+      /* menu body */
+      #menuBox{
             display: grid;
             grid-template-columns: repeat(4,1fr);
             gap: 10px;
@@ -167,7 +169,7 @@
           border-radius: 5px;
       }
       #menuBox>div>p{
-          font-size: 8px;
+          font-size: 16px;
           font-family: sans-serif;
       }
       #p1{
@@ -177,8 +179,10 @@
       #p2{
           color: #357471;
       }
-       /* bottom */
-       #bottomBox1{
+
+
+      /* bottom */
+      #bottomBox1{
          width: 60%;
          text-align: center;
          margin: 80px auto;
@@ -186,11 +190,12 @@
          color: #333333;
       }
       #bottomBox1>p{
-          font-size: 10.5px;
+          font-size: 16px;
       }
       #bottomBox2{
-          display: flex;
-          width: 90%;
+          display: grid;
+          grid-template-columns: repeat(5,1fr);
+          width: 70%;
           height: auto;
           gap: 10px;
           margin: auto;
@@ -204,6 +209,9 @@
       #bottomBox2>div>img{
           height:150px;
           width: 200px;
+      }
+      #bottomBox2>div>h4{
+          font-size: 22px;
       }
       #bottomBox2>div>p{
           font-size: 15px;
@@ -291,6 +299,31 @@
     color: gray;
 }
 
+        #c, #c1, #c2, #c3, #c4, #c5{
+            background-color: inherit;
+            border: none;
+            font-size: 30px;
+            color: rgb(87, 87, 228);
+            /* padding-left: 600px; */
+            padding-right: 800px;
+        }
+
+        #show, #show1, #show2, #show3, #show4, #show5 {
+            display: none;
+            padding-left: 70px;
+            padding-right: 1000px;
+        }
+  #foot {
+            /* background-color: rgb(239, 239, 248); */
+            width: 150%;
+            height: 600px;
+        }
+
+        #foot h2 {
+            text-align: center;
+            padding-right: 678px;
+            font-size: 70px;
+        }
     </style>
 </head>
 <body>
@@ -348,47 +381,41 @@
 
     <!-- menu body -->
     <div id="menuBox"></div>
+
+
     <!-- bottom -->
     <div id="bottomBox1">
         <h1 style="font-size:40px;">For Every Diet & Lifestyle</h1>
         <p style="font-size:20px;">We’re here to make every dish delicious and nutritious, with prepared meals that satisfy a wide range of tastes—all meticulously crafted to meet your dietary wants and needs.</p>
     </div>
     <div id="bottomBox2">
-        <!-- purely plants -->
          <div>
-                <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/620001104582091be7236479_Freshly_Iconography_DietaryIcons-03-p-500.png">
-                <h4>Purely Plant</h4>
-                <p>Plant-based meals for everyone</p>
-                <a href="./purelyPlant.html">Learn more</a>
+             <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/620001104582091be7236479_Freshly_Iconography_DietaryIcons-03-p-500.png">
+           <h4>Purely Plant</h4>
+           <p>Plant-based meals for everyone</p>
+           <a href="./purelyPlant.html">Learn more</a>
         </div>
-        <!-- gluten free -->
          <div>
              <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/6200014b6c9c4f739d8a120f_Freshly_Iconography_DietaryIcons-05-p-500.png">
-                <h4>Gluten Free</h4>
-                <p>Certified by the Gluten Intolerance Group</p>
-                <a href="./glutenFree.html">Learn more</a>
+        <h4>Gluten Free</h4>
+        <p>Certified by the Gluten Intolerance Group</p>
+        <a href="./glutenFree.html">Learn more</a>
         </div>
-        <!-- dairy free -->
-        <div>
-            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/62000182acc5e0f3435178cb_Freshly_Iconography_DietaryIcons-02-p-500.png">
-            <h4>Dairy Free Meals
-            </h4>
-            <p>Dairy free prepared meals for all tastes</p>
-            <a href="./dairyFree.html">Learn more</a>
+         <div><img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/62000182acc5e0f3435178cb_Freshly_Iconography_DietaryIcons-02-p-500.png">
+        <h4>Dairy Free Meals
+        </h4>
+        <p>Dairy free prepared meals for all tastes</p>
+        <a href="./dairyFree.html">Learn more</a>
         </div>
-        <!-- crab smart -->
-         <div>
-             <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/620002995a9c84ce8cc5dc3b_Freshly_Iconography_DietaryIcons-01-p-500.png">
-                <h4>Carb-Smart</h4>
-                <p>Chef-crafted low-carb meals</p>
-                <a href="./crabSmart.html">Learn more</a>
+         <div><img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/620002995a9c84ce8cc5dc3b_Freshly_Iconography_DietaryIcons-01-p-500.png">
+        <h4>Carb-Smart</h4>
+        <p>Chef-crafted low-carb meals</p>
+        <a href="./crabSmart.html">Learn more</a>
         </div>
-        <!-- calories -->
-         <div>
-             <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/620002cf09966d7359a8b2e8_Freshly_Iconography_DietaryIcons-04-p-500.png">
-                <h4>Calorie-Conscious</h4>
-                <p>Low-calorie meal plan with perfect portions</p>
-                <a href="./calories.html">Learn more</a>
+         <div><img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/620002cf09966d7359a8b2e8_Freshly_Iconography_DietaryIcons-04-p-500.png">
+        <h4>Calorie-Conscious</h4>
+        <p>Low-calorie meal plan with perfect portions</p>
+        <a href="./calories.html">Learn more</a>
         </div>
     </div>
     
@@ -489,9 +516,7 @@
 
 </body>
 <script>
-
-    // menu body
-     var menuData=[
+   var menuData=[
        {
         image:"https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61063fef3319dbcfa7088dc3_production-meal-image-29fee2e7-8e88-4cd3-aad9-0e7d25671f7f.jpeg",
         dish:"Steak Peppercorn",
@@ -779,7 +804,7 @@
         cal.innerText=menuItem.cal;
         cal.id="p2"
 
-        box.append(img,dishName,cal);
+        box.append(img,dishName,cal)
         document.querySelector("#menuBox").append(box);
     });
 
