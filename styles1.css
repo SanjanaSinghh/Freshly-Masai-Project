@@ -1,27 +1,65 @@
-#outerDiv{
-    height: 30px;
-    display:grid;
+#outerDiv {
+    height: 60px;
+    display: grid;
     grid-template-columns: 1fr 4fr 1fr;
+    background-color: rgb(252, 236, 238);
 }
-#outerDiv>div{
+
+#outerDiv>div {
     display: flex;
     justify-content: space-evenly;
-    font-size: 10px;
+    font-size: 17px;
     padding: 2%;
-    
+
 }
-#innerDiv1>a>img{
-    height: 10px;
-    width: 50px;
+
+#innerDiv1>a>img {
+    height: 39px;
+    width: 88px;
     padding: 5%;
 }
-#innerDiv3>div{
+
+#innerDiv3 a {
     padding: 5%;
+    font-size: 20px;
 }
-#signUp{
-    background-color: #3167ff;
-    color: white;
-    
+
+#innerDiv2>div {
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #333333;
+    font-weight: bold;
+}
+
+#innerDiv2>div:hover {
+    color: #3167ff;
+    cursor: pointer;
+}
+
+#innerDiv2 a{
+    color: black;
+    text-decoration: none;
+}
+
+#l{
+    text-decoration: none;
+    color: black;
+}
+
+#l:hover {
+    color: #3167ff;
+    cursor: pointer;
+}
+
+#s{
+    text-decoration: none;
+    color: black;
+}
+
+#s:hover {
+    -moz-box-shadow: 0 0 10px 0 rgb(187, 181, 240);
+    -webkit-box-shadow: 0 0 10px 0 rgb(143, 127, 214);
+    box-shadow: 0 0 10px 0 rgb(149, 160, 221);
 }
   h1{
       text-align: center;
