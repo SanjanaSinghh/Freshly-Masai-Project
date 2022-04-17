@@ -101,3 +101,18 @@ button{
     padding-right: 678px;
     font-size: 70px;
 }
+
+
+#navbar{
+    display: flex;
+    height: 62px;
+    border-bottom: 1px  solid rgb(218, 210, 210);
+    background-color: white;
+}
+#top{
+display: flex;
+padding-left: 350px;
+}
+#top p{
+margin-right:20px;
+}
