@@ -1,0 +1,28 @@
+#reqForm{
+    display: block;
+}
+#navBar{
+    
+    display: flex;
+    
+    font-size: 17px;
+    padding: 2%;
+}
+#navBar > #twoCont{
+    margin-left: 900px;
+    padding: 1%;
+}
+#navBar img{
+    height: 50px;
+    
+}
+#container{
+   
+    width: 600px;
+    
+    
+}
+#container > #reqForm{
+    
+    
+}

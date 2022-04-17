@@ -1,0 +1,34 @@
+#navBar{
+    
+    display: flex;
+}
+#navBar img{
+    height: 50px;
+}
+#outerDiv{
+    display:flex
+
+}
+#sideNavi{
+    border: 2px solid red;
+    padding: 5%;
+    display:block;
+    width: 200px;
+     
+}
+#sideNavi button{
+    height: 40px;
+    width: 200px;
+    margin: 2%;
+    font-size: 15px;
+    border: none;
+    background-color: white;
+}
+#sideNavi button:hover{
+    background-color: teal;
+}
+#article{
+    border: 2px solid blue;
+    height: inherit;
+    width: 600px;
+}
