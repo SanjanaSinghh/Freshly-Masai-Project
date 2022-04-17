@@ -1,3 +1,4 @@
+
 #coverPic {
     justify-content: center;
     align-items: center;
@@ -17,6 +18,7 @@ div > input {
     display: block;
     padding: 3%;
     justify-content: center;
+    
 }
 #enquire  button{
     background-color: white;
@@ -33,10 +35,32 @@ div > input {
 #navBar{
     
     display: flex;
+    justify-content: space-evenly;
+    font-size: 17px;
+    padding: 2%;
 }
 #navBar img{
     height: 50px;
     
 }
+#faq{
+    display: block;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 5%;
+    
+    
+}
+#faq a{
+    
+    color: rgba(48, 48, 48, 1);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    
+}
+
+  
 
 
