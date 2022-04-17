@@ -1,4 +1,6 @@
+var sanjana = false;
 document.querySelector('form').addEventListener('submit',logfn);
+
 function logfn(){
 var regisUs = JSON.parse(localStorage.getItem('usdata'));
 if(regisUs==null){

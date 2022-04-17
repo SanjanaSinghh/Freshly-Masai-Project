@@ -41,6 +41,12 @@ h4{
     /* margin-left: 8%; */
     border: 1px solid black;
 }
+.box2:hover{
+    background-color:rgb(250, 201, 137) ;
+    -moz-box-shadow: 0 0 10px 0 #666;
+    -webkit-box-shadow: 0 0 10px 0 #666;
+    box-shadow: 0 0 10px 0 #666;
+}
 button{
     text-decoration: none;
     border: 0cm;
