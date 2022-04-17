@@ -25,7 +25,11 @@ div > input {
     height: 70px;
     width: 350px;
     margin: 2%;
-    
+    font-size: 25px;
+}
+#enquire a{
+    text-decoration: none;
+    color: black;
 }
 #enquire > button:hover{
     background-color: teal;
@@ -33,6 +37,10 @@ div > input {
 #navBar{
     
     display: flex;
+}
+#navBar a{
+    padding-left: 200px;
+    font-size: 20px;
 }
 #navBar img{
     height: 50px;
