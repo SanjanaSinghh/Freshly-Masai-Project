@@ -19,5 +19,5 @@ function signfrm(){
     usdata.push(usob);
     localStorage.setItem('usdata',JSON.stringify(usdata));
     alert('User signed in succesfully!')
-     window.location.href = 'plans.html'
+     window.location.href = 'Plan1.html'
 }
