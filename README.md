@@ -18,6 +18,9 @@ Freshly is a New York-based prepared meal delivery company that delivers through
 •	VS Code <br>
 •	Github
 
+# Deploy Link
+https://freshly-clone-website.netlify.app/
+
 # Website Preview
 •	Home Screen <br>
 ![ss1](https://user-images.githubusercontent.com/89686839/163761923-c50294ac-f01b-4026-98de-9cc421369d7c.png)
